@@ -1,0 +1,1036 @@
+<?xml version="1.0"?>
+<Calculation id="2" Name="Calculation" Version="1.0" UI_Type="Standalone">
+  <Reactor id="38" ID="CBR_PQ" CalculationOrderNumber="0">
+    <Mechanism id="18"/>
+    <UI X="0.0000000000000000e+000" Y="0.0000000000000000e+000"/>
+    <InputStream Name="" InletNumber="0">
+      <StreamPhase Name="Gas phase" Type="g" FractionType="Mole">
+        <StreamContinuum Name="">
+          <StreamSubsystem Name="">
+            <IsothermicSubsystemProperty>
+              <Temperature id="65" value="1.8000000000000000e+003" units="K"/>
+            </IsothermicSubsystemProperty>
+            <StreamSubstance Name="H2S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/" Fraction="1.0000000000000000e+000" id="1704"/>
+          </StreamSubsystem>
+        </StreamContinuum>
+      </StreamPhase>
+    </InputStream>
+    <ParameterTable Name="Calculation parameters">
+      <ParameterDbl id="43" Name="RelativeError" value="1.0000000000000001e-005"/>
+      <ParameterDbl id="44" Name="Noise" value="9.9999999999999998e-017"/>
+    </ParameterTable>
+    <ParameterTable Name="Induction time calculation parameters">
+      <ParameterStr id="46" Name="Induction Time By" value=""/>
+      <ParameterDbl id="47" Name="Threshold" value="1.0000000000000000e-004" units="%"/>
+      <ParameterDbl id="48" Name="TimeThreshold" value="1.0000000000000000e-003" units="s"/>
+    </ParameterTable>
+    <ParameterTable Name="Model parameters">
+      <ParameterStr id="50" Name="Pressure" value="1" units="atm"/>
+      <ParameterStr id="51" Name="HeatLoss" value="0" units="J/(g*s)"/>
+      <ParameterDbl id="52" Name="tout" value="5.0000000000000002e-005" units="s"/>
+    </ParameterTable>
+    <ParameterTable Name="Output parameters">
+      <ParameterInt id="54" Name="Frequencyofresultswriting" value="1"/>
+      <ParameterStr id="55" Name="TablesToReport" value="General results only"/>
+      <ParameterTbl Name="ReportTimes"/>
+      <ParameterDbl id="56" Name="ReportOnConcentrationChange" value="0.0000000000000000e+000"/>
+      <ParameterInt id="57" Name="TimeIntervals" value="1"/>
+    </ParameterTable>
+    <ParameterTable Name="Reaction time calculation parameters">
+      <ParameterStr id="59" Name="Reaction Time By" value=""/>
+      <ParameterDbl id="60" Name="EpsilonK" value="1.0000000000000000e-004"/>
+    </ParameterTable>
+  </Reactor>
+  <Mechanism Name="H2S Pyrolysis 4" Comment="1.Potapkin B.V., Rusanov V.D., Strelkova M.I., Fridman A.A. Kinetika dissotsiatsii serovodoroda v termicheskoy plazme. &#x2014; Khimiya vysokikh energiy, 1988, t. 22, &#x2116;6, s. 537-540.           2. Baulch D. L. et al. Evaluated Kinetics Data for High Temperature Reactions. L.: University of Leeds, 1976." id="18">
+    <Phase Name="Gas phase" Type="g">
+      <Continuum Name="">
+        <Subsystem Type="Isothermic">
+          <Substance id="139" Name="Ar/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+            <Name formula="Ar" phase_type="g" charge="0"/>
+            <CommonProperty>
+              <Thermodynamics>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="193" value="2.0000000000000000e+002" units="K"/>
+                  <Tmax id="194" value="6.0000000000000000e+003" units="K"/>
+                  <F1 id="195" value="2.0707630000000000e+002"/>
+                  <F2 id="196" value="2.0786180000000002e+001"/>
+                  <F3 id="197" value="0.0000000000000000e+000"/>
+                  <F4 id="198" value="0.0000000000000000e+000"/>
+                  <F5 id="199" value="0.0000000000000000e+000"/>
+                  <F6 id="200" value="0.0000000000000000e+000"/>
+                  <F7 id="201" value="0.0000000000000000e+000"/>
+                  <DFH298 id="140" value="0.0000000000000000e+000" units="kJ/mole"/>
+                  <H298H0 id="143" value="6.1974000000000000e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+              </Thermodynamics>
+              <MolarMass id="145" value="3.9948000000000000e+001" units="g/mole"/>
+              <Composition>
+                <Element name="Ar" count="1.0000000000000000e+000"/>
+              </Composition>
+            </CommonProperty>
+            <AtomProperty AtomsCount="1">
+              <AtomStateProperty>
+                <Multiplet value="1" id="155"/>
+              </AtomStateProperty>
+            </AtomProperty>
+          </Substance>
+          <Substance id="202" Name="S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+            <Name formula="S2" phase_type="g" charge="0"/>
+            <CommonProperty>
+              <Thermodynamics>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="256" value="2.0000000000000000e+002" units="K"/>
+                  <Tmax id="257" value="5.0000000000000000e+002" units="K"/>
+                  <F1 id="258" value="2.7838749999999999e+002"/>
+                  <F2 id="259" value="2.4046330000000001e+001"/>
+                  <F3 id="260" value="-3.9320800000000003e-006"/>
+                  <F4 id="261" value="1.5410599999999999e-003"/>
+                  <F5 id="262" value="2.0292760000000001e+002"/>
+                  <F6 id="263" value="-7.8028450000000009e+002"/>
+                  <F7 id="264" value="1.6628850000000000e+003"/>
+                  <DFH298 id="203" value="1.2859940000000000e+002" units="kJ/mole"/>
+                  <H298H0 id="206" value="8.5863459999999989e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="277" value="5.0000000000000000e+002" units="K"/>
+                  <Tmax id="278" value="8.0000000000000000e+002" units="K"/>
+                  <F1 id="279" value="2.8346789999999999e+002"/>
+                  <F2 id="280" value="2.5592919999999999e+001"/>
+                  <F3 id="281" value="-2.2120399999999999e-004"/>
+                  <F4 id="282" value="4.2258499999999997e-002"/>
+                  <F5 id="283" value="1.7309000000000000e+002"/>
+                  <F6 id="284" value="-6.3382979999999998e+002"/>
+                  <F7 id="285" value="1.2723270000000000e+003"/>
+                  <DFH298 id="203" value="1.2859940000000000e+002" units="kJ/mole"/>
+                  <H298H0 id="206" value="8.5863459999999989e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="298" value="8.0000000000000000e+002" units="K"/>
+                  <Tmax id="299" value="1.0000000000000000e+003" units="K"/>
+                  <F1 id="300" value="2.9959280000000001e+002"/>
+                  <F2 id="301" value="3.1254059999999999e+001"/>
+                  <F3 id="302" value="-2.0947700000000001e-003"/>
+                  <F4 id="303" value="2.7185399999999998e-001"/>
+                  <F5 id="304" value="1.0285720000000001e+002"/>
+                  <F6 id="305" value="-4.1459769999999997e+002"/>
+                  <F7 id="306" value="9.0498910000000001e+002"/>
+                  <DFH298 id="203" value="1.2859940000000000e+002" units="kJ/mole"/>
+                  <H298H0 id="206" value="8.5863459999999989e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="319" value="1.0000000000000000e+003" units="K"/>
+                  <Tmax id="320" value="2.2000000000000000e+003" units="K"/>
+                  <F1 id="321" value="3.0656650000000002e+002"/>
+                  <F2 id="322" value="3.2117620000000002e+001"/>
+                  <F3 id="323" value="-1.8211300000000000e-004"/>
+                  <F4 id="324" value="1.4023099999999999e-001"/>
+                  <F5 id="325" value="3.4732729999999997e+001"/>
+                  <F6 id="326" value="-3.0494610000000002e+001"/>
+                  <F7 id="327" value="1.6030690000000000e+001"/>
+                  <DFH298 id="203" value="1.2859940000000000e+002" units="kJ/mole"/>
+                  <H298H0 id="206" value="8.5863459999999989e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="340" value="2.2000000000000000e+003" units="K"/>
+                  <Tmax id="341" value="3.5000000000000000e+003" units="K"/>
+                  <F1 id="342" value="3.1085280000000000e+002"/>
+                  <F2 id="343" value="3.4488840000000003e+001"/>
+                  <F3 id="344" value="-6.5463400000000003e-003"/>
+                  <F4 id="345" value="4.1337299999999999e-001"/>
+                  <F5 id="346" value="2.4304620000000000e+001"/>
+                  <F6 id="347" value="-1.8862340000000000e+001"/>
+                  <F7 id="348" value="9.0037679999999991e+000"/>
+                  <DFH298 id="203" value="1.2859940000000000e+002" units="kJ/mole"/>
+                  <H298H0 id="206" value="8.5863459999999989e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="361" value="3.5000000000000000e+003" units="K"/>
+                  <Tmax id="362" value="5.0000000000000000e+003" units="K"/>
+                  <F1 id="363" value="3.2567149999999998e+002"/>
+                  <F2 id="364" value="4.5407110000000003e+001"/>
+                  <F3 id="365" value="-7.7941399999999994e-002"/>
+                  <F4 id="366" value="2.3811170000000002e+000"/>
+                  <F5 id="367" value="-6.2050859999999997e+000"/>
+                  <F6 id="368" value="2.6164860000000001e+000"/>
+                  <F7 id="369" value="8.7395999999999996e-001"/>
+                  <DFH298 id="203" value="1.2859940000000000e+002" units="kJ/mole"/>
+                  <H298H0 id="206" value="8.5863459999999989e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="382" value="5.0000000000000000e+003" units="K"/>
+                  <Tmax id="383" value="6.0000000000000000e+003" units="K"/>
+                  <F1 id="384" value="3.5857940000000002e+002"/>
+                  <F2 id="385" value="7.7717680000000001e+001"/>
+                  <F3 id="386" value="-4.9179600000000001e-001"/>
+                  <F4 id="387" value="1.0540910000000000e+001"/>
+                  <F5 id="388" value="-7.0450130000000001e+001"/>
+                  <F6 id="389" value="3.4691530000000000e+001"/>
+                  <F7 id="390" value="-7.7042099999999998e+000"/>
+                  <DFH298 id="203" value="1.2859940000000000e+002" units="kJ/mole"/>
+                  <H298H0 id="206" value="8.5863459999999989e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+              </Thermodynamics>
+              <MolarMass id="208" value="6.4120000000000005e+001" units="g/mole"/>
+              <Composition>
+                <Element name="S" count="2.0000000000000000e+000"/>
+              </Composition>
+            </CommonProperty>
+            <DiatomicProperty AtomsCount="2">
+              <DiatomicStateProperty>
+                <RotConst V="0.0000000000000000e+000" id="219" units="1/cm"/>
+                <VibConst We="0.0000000000000000e+000" id="220" units="1/cm"/>
+                <Multiplet value="1" id="224"/>
+              </DiatomicStateProperty>
+            </DiatomicProperty>
+          </Substance>
+          <Substance id="391" Name="S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+            <Name formula="S" phase_type="g" charge="0"/>
+            <CommonProperty>
+              <Thermodynamics>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="445" value="2.0000000000000000e+002" units="K"/>
+                  <Tmax id="446" value="3.5000000000000000e+002" units="K"/>
+                  <F1 id="447" value="2.1201120000000000e+002"/>
+                  <F2 id="448" value="2.0078980000000001e+001"/>
+                  <F3 id="449" value="-1.8804099999999998e-005"/>
+                  <F4 id="450" value="8.6065800000000008e-003"/>
+                  <F5 id="451" value="1.5826589999999999e+002"/>
+                  <F6 id="452" value="-1.4079369999999999e+003"/>
+                  <F7 id="453" value="5.3731250000000000e+003"/>
+                  <DFH298 id="392" value="2.7697879999999998e+002" units="kJ/mole"/>
+                  <H298H0 id="395" value="6.7010439999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="466" value="3.5000000000000000e+002" units="K"/>
+                  <Tmax id="467" value="5.0000000000000000e+002" units="K"/>
+                  <F1 id="468" value="2.2549070000000000e+002"/>
+                  <F2 id="469" value="2.3750720000000001e+001"/>
+                  <F3 id="470" value="-2.5399199999999998e-004"/>
+                  <F4 id="471" value="7.4066199999999999e-002"/>
+                  <F5 id="472" value="5.4455120000000008e+001"/>
+                  <F6 id="473" value="-6.6804719999999998e+002"/>
+                  <F7 id="474" value="2.5369859999999999e+003"/>
+                  <DFH298 id="392" value="2.7697879999999998e+002" units="kJ/mole"/>
+                  <H298H0 id="395" value="6.7010439999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="487" value="5.0000000000000000e+002" units="K"/>
+                  <Tmax id="488" value="7.0000000000000000e+002" units="K"/>
+                  <F1 id="489" value="2.7159910000000002e+002"/>
+                  <F2 id="490" value="3.7712069999999997e+001"/>
+                  <F3 id="491" value="-2.1134499999999998e-003"/>
+                  <F4 id="492" value="4.3343799999999999e-001"/>
+                  <F5 id="493" value="-2.1824690000000001e+002"/>
+                  <F6 id="494" value="6.7156540000000007e+002"/>
+                  <F7 id="495" value="-9.9485940000000005e+002"/>
+                  <DFH298 id="392" value="2.7697879999999998e+002" units="kJ/mole"/>
+                  <H298H0 id="395" value="6.7010439999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="508" value="7.0000000000000000e+002" units="K"/>
+                  <Tmax id="509" value="9.0000000000000000e+002" units="K"/>
+                  <F1 id="510" value="3.9738249999999999e+002"/>
+                  <F2 id="511" value="7.9880040000000008e+001"/>
+                  <F3 id="512" value="-1.2732700000000000e-002"/>
+                  <F4 id="513" value="1.9267510000000001e+000"/>
+                  <F5 id="514" value="-8.1609860000000003e+002"/>
+                  <F6 id="515" value="2.7996779999999999e+003"/>
+                  <F7 id="516" value="-5.0524059999999999e+003"/>
+                  <DFH298 id="392" value="2.7697879999999998e+002" units="kJ/mole"/>
+                  <H298H0 id="395" value="6.7010439999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="529" value="9.0000000000000000e+002" units="K"/>
+                  <Tmax id="530" value="1.0000000000000000e+003" units="K"/>
+                  <F1 id="531" value="6.7428150000000005e+002"/>
+                  <F2 id="532" value="1.8126689999999999e+002"/>
+                  <F3 id="533" value="-5.4800000000000001e-002"/>
+                  <F4 id="534" value="6.5402820000000004e+000"/>
+                  <F5 id="535" value="-1.9323389999999999e+003"/>
+                  <F6 id="536" value="5.8782930000000006e+003"/>
+                  <F7 id="537" value="-9.5902839999999997e+003"/>
+                  <DFH298 id="392" value="2.7697879999999998e+002" units="kJ/mole"/>
+                  <H298H0 id="395" value="6.7010439999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="550" value="1.0000000000000000e+003" units="K"/>
+                  <Tmax id="551" value="2.0000000000000000e+003" units="K"/>
+                  <F1 id="552" value="2.2890459999999999e+002"/>
+                  <F2 id="553" value="2.3642029999999998e+001"/>
+                  <F3 id="554" value="1.9356500000000001e-004"/>
+                  <F4 id="555" value="-1.2178599999999999e-002"/>
+                  <F5 id="556" value="-1.8453690000000002e+001"/>
+                  <F6 id="557" value="2.7927070000000001e+001"/>
+                  <F7 id="558" value="-1.7684069999999998e+001"/>
+                  <DFH298 id="392" value="2.7697879999999998e+002" units="kJ/mole"/>
+                  <H298H0 id="395" value="6.7010439999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="571" value="2.0000000000000000e+003" units="K"/>
+                  <Tmax id="572" value="3.2000000000000000e+003" units="K"/>
+                  <F1 id="573" value="2.2416130000000001e+002"/>
+                  <F2 id="574" value="2.1142820000000000e+001"/>
+                  <F3 id="575" value="5.7790200000000002e-003"/>
+                  <F4 id="576" value="-2.7504200000000001e-001"/>
+                  <F5 id="577" value="-6.4312519999999997e+000"/>
+                  <F6 id="578" value="1.3274310000000000e+001"/>
+                  <F7 id="579" value="-8.0212349999999990e+000"/>
+                  <DFH298 id="392" value="2.7697879999999998e+002" units="kJ/mole"/>
+                  <H298H0 id="395" value="6.7010439999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="592" value="3.2000000000000000e+003" units="K"/>
+                  <Tmax id="593" value="4.5000000000000000e+003" units="K"/>
+                  <F1 id="594" value="2.0751320000000001e+002"/>
+                  <F2 id="595" value="9.6675690000000003e+000"/>
+                  <F3 id="596" value="6.8023100000000003e-002"/>
+                  <F4 id="597" value="-2.1585369999999999e+000"/>
+                  <F5 id="598" value="2.8778919999999999e+001"/>
+                  <F6 id="599" value="-1.3942190000000000e+001"/>
+                  <F7 id="600" value="3.2876690000000002e+000"/>
+                  <DFH298 id="392" value="2.7697879999999998e+002" units="kJ/mole"/>
+                  <H298H0 id="395" value="6.7010439999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="613" value="4.5000000000000000e+003" units="K"/>
+                  <Tmax id="614" value="5.5000000000000000e+003" units="K"/>
+                  <F1 id="615" value="1.7410860000000000e+002"/>
+                  <F2 id="616" value="-1.9951260000000001e+001"/>
+                  <F3 id="617" value="3.7268299999999999e-001"/>
+                  <F4 id="618" value="-8.8626819999999995e+000"/>
+                  <F5 id="619" value="9.4462860000000006e+001"/>
+                  <F6 id="620" value="-5.0501470000000012e+001"/>
+                  <F7 id="621" value="1.4182800000000000e+001"/>
+                  <DFH298 id="392" value="2.7697879999999998e+002" units="kJ/mole"/>
+                  <H298H0 id="395" value="6.7010439999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="634" value="5.5000000000000000e+003" units="K"/>
+                  <Tmax id="635" value="6.0000000000000000e+003" units="K"/>
+                  <F1 id="636" value="1.4650080000000000e+002"/>
+                  <F2 id="637" value="-4.9317180000000008e+001"/>
+                  <F3 id="638" value="8.0959399999999992e-001"/>
+                  <F4 id="639" value="-1.6869190000000000e+001"/>
+                  <F5 id="640" value="1.4835509999999999e+002"/>
+                  <F6 id="641" value="-7.5244450000000001e+001"/>
+                  <F7 id="642" value="2.0245560000000001e+001"/>
+                  <DFH298 id="392" value="2.7697879999999998e+002" units="kJ/mole"/>
+                  <H298H0 id="395" value="6.7010439999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+              </Thermodynamics>
+              <MolarMass id="397" value="3.2060000000000002e+001" units="g/mole"/>
+              <Composition>
+                <Element name="S" count="1.0000000000000000e+000"/>
+              </Composition>
+            </CommonProperty>
+            <AtomProperty AtomsCount="1">
+              <AtomStateProperty>
+                <Multiplet value="1" id="407"/>
+              </AtomStateProperty>
+            </AtomProperty>
+          </Substance>
+          <Substance id="643" Name="H2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+            <Name formula="H2" phase_type="g" charge="0"/>
+            <CommonProperty>
+              <Thermodynamics>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="697" value="2.0000000000000000e+002" units="K"/>
+                  <Tmax id="698" value="3.5000000000000000e+002" units="K"/>
+                  <F1 id="699" value="1.6987710000000001e+002"/>
+                  <F2 id="700" value="2.0480409999999999e+001"/>
+                  <F3 id="701" value="-2.2743099999999999e-005"/>
+                  <F4 id="702" value="1.0442200000000000e-002"/>
+                  <F5 id="703" value="2.8233650000000000e+002"/>
+                  <F6 id="704" value="-2.0111880000000001e+003"/>
+                  <F7 id="705" value="7.2248879999999999e+003"/>
+                  <DFH298 id="644" value="0.0000000000000000e+000" units="kJ/mole"/>
+                  <H298H0 id="647" value="7.6320549999999994e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="718" value="3.5000000000000000e+002" units="K"/>
+                  <Tmax id="719" value="5.0000000000000000e+002" units="K"/>
+                  <F1 id="720" value="1.8767269999999999e+002"/>
+                  <F2 id="721" value="2.5337669999999999e+001"/>
+                  <F3 id="722" value="-3.3871999999999998e-004"/>
+                  <F4 id="723" value="9.7698999999999994e-002"/>
+                  <F5 id="724" value="1.4598580000000001e+002"/>
+                  <F6 id="725" value="-1.0456479999999999e+003"/>
+                  <F7 id="726" value="3.5445140000000001e+003"/>
+                  <DFH298 id="644" value="0.0000000000000000e+000" units="kJ/mole"/>
+                  <H298H0 id="647" value="7.6320549999999994e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="739" value="5.0000000000000000e+002" units="K"/>
+                  <Tmax id="740" value="6.5000000000000000e+002" units="K"/>
+                  <F1 id="741" value="2.3446729999999999e+002"/>
+                  <F2 id="742" value="3.9443800000000003e+001"/>
+                  <F3 id="743" value="-2.1592899999999999e-003"/>
+                  <F4 id="744" value="4.5528900000000000e-001"/>
+                  <F5 id="745" value="-1.3345779999999999e+002"/>
+                  <F6 id="746" value="3.4452650000000000e+002"/>
+                  <F7 id="747" value="-1.6076849999999999e+002"/>
+                  <DFH298 id="644" value="0.0000000000000000e+000" units="kJ/mole"/>
+                  <H298H0 id="647" value="7.6320549999999994e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="760" value="6.5000000000000000e+002" units="K"/>
+                  <Tmax id="761" value="8.0000000000000000e+002" units="K"/>
+                  <F1 id="762" value="3.2309429999999998e+002"/>
+                  <F2 id="763" value="6.8371610000000004e+001"/>
+                  <F3 id="764" value="-8.3360499999999994e-003"/>
+                  <F4 id="765" value="1.3993679999999999e+000"/>
+                  <F5 id="766" value="-5.7771510000000001e+002"/>
+                  <F6 id="767" value="2.0543110000000001e+003"/>
+                  <F7 id="768" value="-3.6787379999999998e+003"/>
+                  <DFH298 id="644" value="0.0000000000000000e+000" units="kJ/mole"/>
+                  <H298H0 id="647" value="7.6320549999999994e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="781" value="8.0000000000000000e+002" units="K"/>
+                  <Tmax id="782" value="1.0000000000000000e+003" units="K"/>
+                  <F1 id="783" value="5.1624070000000006e+002"/>
+                  <F2 id="784" value="1.3621879999999999e+002"/>
+                  <F3 id="785" value="-3.0685799999999999e-002"/>
+                  <F4 id="786" value="4.1498689999999998e+000"/>
+                  <F5 id="787" value="-1.4164250000000000e+003"/>
+                  <F6 id="788" value="4.6524130000000014e+003"/>
+                  <F7 id="789" value="-7.9815420000000004e+003"/>
+                  <DFH298 id="644" value="0.0000000000000000e+000" units="kJ/mole"/>
+                  <H298H0 id="647" value="7.6320549999999994e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="802" value="1.0000000000000000e+003" units="K"/>
+                  <Tmax id="803" value="2.5000000000000000e+003" units="K"/>
+                  <F1 id="804" value="1.9202719999999999e+002"/>
+                  <F2 id="805" value="2.4523830000000000e+001"/>
+                  <F3 id="806" value="-1.1309400000000000e-004"/>
+                  <F4 id="807" value="-7.8398099999999998e-002"/>
+                  <F5 id="808" value="3.3223590000000002e+001"/>
+                  <F6 id="809" value="-1.7721769999999999e+001"/>
+                  <F7 id="810" value="6.6713769999999997e+000"/>
+                  <DFH298 id="644" value="0.0000000000000000e+000" units="kJ/mole"/>
+                  <H298H0 id="647" value="7.6320549999999994e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="823" value="2.5000000000000000e+003" units="K"/>
+                  <Tmax id="824" value="4.0000000000000000e+003" units="K"/>
+                  <F1 id="825" value="1.9489869999999999e+002"/>
+                  <F2 id="826" value="2.6237829999999999e+001"/>
+                  <F3 id="827" value="-6.1316200000000000e-003"/>
+                  <F4 id="828" value="1.4722299999999999e-001"/>
+                  <F5 id="829" value="2.6611529999999998e+001"/>
+                  <F6 id="830" value="-1.1233720000000000e+001"/>
+                  <F7 id="831" value="3.2132600000000000e+000"/>
+                  <DFH298 id="644" value="0.0000000000000000e+000" units="kJ/mole"/>
+                  <H298H0 id="647" value="7.6320549999999994e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="844" value="4.0000000000000000e+003" units="K"/>
+                  <Tmax id="845" value="5.0000000000000000e+003" units="K"/>
+                  <F1 id="846" value="2.0251750000000001e+002"/>
+                  <F2 id="847" value="3.2377570000000013e+001"/>
+                  <F3 id="848" value="-5.6742599999999997e-002"/>
+                  <F4 id="849" value="1.3898610000000000e+000"/>
+                  <F5 id="850" value="1.1346450000000001e+001"/>
+                  <F6 id="851" value="-1.6836310000000001e+000"/>
+                  <F7 id="852" value="6.0617400000000004e-003"/>
+                  <DFH298 id="644" value="0.0000000000000000e+000" units="kJ/mole"/>
+                  <H298H0 id="647" value="7.6320549999999994e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="865" value="5.0000000000000000e+003" units="K"/>
+                  <Tmax id="866" value="6.0000000000000000e+003" units="K"/>
+                  <F1 id="867" value="2.0938280000000000e+002"/>
+                  <F2 id="868" value="3.9129890000000003e+001"/>
+                  <F3 id="869" value="-1.4287500000000000e-001"/>
+                  <F4 id="870" value="3.0948120000000001e+000"/>
+                  <F5 id="871" value="-2.0298189999999998e+000"/>
+                  <F6 id="872" value="4.9436209999999994e+000"/>
+                  <F7 id="873" value="-1.7458520000000000e+000"/>
+                  <DFH298 id="644" value="0.0000000000000000e+000" units="kJ/mole"/>
+                  <H298H0 id="647" value="7.6320549999999994e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+              </Thermodynamics>
+              <MolarMass id="649" value="2.0158000000000000e+000" units="g/mole"/>
+              <Composition>
+                <Element name="H" count="2.0000000000000000e+000"/>
+              </Composition>
+            </CommonProperty>
+            <DiatomicProperty AtomsCount="2">
+              <DiatomicStateProperty>
+                <RotConst V="0.0000000000000000e+000" id="660" units="1/cm"/>
+                <VibConst We="0.0000000000000000e+000" id="661" units="1/cm"/>
+                <Multiplet value="1" id="665"/>
+              </DiatomicStateProperty>
+            </DiatomicProperty>
+          </Substance>
+          <Substance id="874" Name="H2S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+            <Name formula="H2S" phase_type="g" charge="0"/>
+            <CommonProperty>
+              <Thermodynamics>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="928" value="2.0000000000000000e+002" units="K"/>
+                  <Tmax id="929" value="4.0000000000000000e+002" units="K"/>
+                  <F1 id="930" value="2.9248439999999999e+002"/>
+                  <F2 id="931" value="3.3892850000000003e+001"/>
+                  <F3 id="932" value="9.2124899999999996e-006"/>
+                  <F4 id="933" value="-4.0453099999999999e-003"/>
+                  <F5 id="934" value="-6.0824170000000002e+001"/>
+                  <F6 id="935" value="9.1106270000000006e+002"/>
+                  <F7 id="936" value="-2.8019989999999998e+003"/>
+                  <DFH298 id="875" value="-2.0599910000000001e+001" units="kJ/mole"/>
+                  <H298H0 id="878" value="1.0015240000000000e+001" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="949" value="4.0000000000000000e+002" units="K"/>
+                  <Tmax id="950" value="6.5000000000000000e+002" units="K"/>
+                  <F1 id="951" value="2.8053399999999999e+002"/>
+                  <F2 id="952" value="3.0479600000000001e+001"/>
+                  <F3 id="953" value="3.1842399999999999e-004"/>
+                  <F4 id="954" value="-7.6310999999999990e-002"/>
+                  <F5 id="955" value="2.0801890000000000e+001"/>
+                  <F6 id="956" value="4.1595940000000002e+002"/>
+                  <F7 id="957" value="-1.1748589999999999e+003"/>
+                  <DFH298 id="875" value="-2.0599910000000001e+001" units="kJ/mole"/>
+                  <H298H0 id="878" value="1.0015240000000000e+001" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="970" value="6.5000000000000000e+002" units="K"/>
+                  <Tmax id="971" value="8.0000000000000000e+002" units="K"/>
+                  <F1 id="972" value="2.3605940000000001e+002"/>
+                  <F2 id="973" value="1.5915369999999999e+001"/>
+                  <F3 id="974" value="3.5204199999999998e-003"/>
+                  <F4 id="975" value="-5.5754700000000001e-001"/>
+                  <F5 id="976" value="2.4277430000000001e+002"/>
+                  <F6 id="977" value="-4.3606560000000002e+002"/>
+                  <F7 id="978" value="5.8235800000000006e+002"/>
+                  <DFH298 id="875" value="-2.0599910000000001e+001" units="kJ/mole"/>
+                  <H298H0 id="878" value="1.0015240000000000e+001" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="991" value="8.0000000000000000e+002" units="K"/>
+                  <Tmax id="992" value="1.0000000000000000e+003" units="K"/>
+                  <F1 id="993" value="1.9469909999999999e+002"/>
+                  <F2 id="994" value="1.2694690000000000e+000"/>
+                  <F3 id="995" value="8.5423700000000005e-003"/>
+                  <F4 id="996" value="-1.1641239999999999e+000"/>
+                  <F5 id="997" value="4.1949979999999999e+002"/>
+                  <F6 id="998" value="-9.6891040000000010e+002"/>
+                  <F7 id="999" value="1.4387560000000001e+003"/>
+                  <DFH298 id="875" value="-2.0599910000000001e+001" units="kJ/mole"/>
+                  <H298H0 id="878" value="1.0015240000000000e+001" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="1012" value="1.0000000000000000e+003" units="K"/>
+                  <Tmax id="1013" value="1.8000000000000000e+003" units="K"/>
+                  <F1 id="1014" value="2.6228190000000001e+002"/>
+                  <F2 id="1015" value="2.5755389999999998e+001"/>
+                  <F3 id="1016" value="-5.7167399999999999e-004"/>
+                  <F4 id="1017" value="-8.5750399999999991e-002"/>
+                  <F5 id="1018" value="1.3970570000000001e+002"/>
+                  <F6 id="1019" value="-1.4281020000000001e+002"/>
+                  <F7 id="1020" value="8.2892610000000005e+001"/>
+                  <DFH298 id="875" value="-2.0599910000000001e+001" units="kJ/mole"/>
+                  <H298H0 id="878" value="1.0015240000000000e+001" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="1033" value="1.8000000000000000e+003" units="K"/>
+                  <Tmax id="1034" value="2.8000000000000000e+003" units="K"/>
+                  <F1 id="1035" value="2.7565240000000000e+002"/>
+                  <F2 id="1036" value="3.2421780000000012e+001"/>
+                  <F3 id="1037" value="-1.2549899999999999e-002"/>
+                  <F4 id="1038" value="5.4333799999999999e-001"/>
+                  <F5 id="1039" value="1.0401949999999999e+002"/>
+                  <F6 id="1040" value="-9.4498210000000014e+001"/>
+                  <F7 id="1041" value="4.7572710000000001e+001"/>
+                  <DFH298 id="875" value="-2.0599910000000001e+001" units="kJ/mole"/>
+                  <H298H0 id="878" value="1.0015240000000000e+001" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="1054" value="2.8000000000000000e+003" units="K"/>
+                  <Tmax id="1055" value="3.8000000000000000e+003" units="K"/>
+                  <F1 id="1056" value="3.1651350000000002e+002"/>
+                  <F2 id="1057" value="5.8048810000000003e+001"/>
+                  <F3 id="1058" value="-1.1666600000000001e-001"/>
+                  <F4 id="1059" value="4.1850310000000004e+000"/>
+                  <F5 id="1060" value="1.3287470000000001e+001"/>
+                  <F6 id="1061" value="-1.3675689999999999e+001"/>
+                  <F7 id="1062" value="8.9278890000000004e+000"/>
+                  <DFH298 id="875" value="-2.0599910000000001e+001" units="kJ/mole"/>
+                  <H298H0 id="878" value="1.0015240000000000e+001" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="1075" value="3.8000000000000000e+003" units="K"/>
+                  <Tmax id="1076" value="5.0000000000000000e+003" units="K"/>
+                  <F1 id="1077" value="4.1048260000000010e+002"/>
+                  <F2 id="1078" value="1.3126079999999999e+002"/>
+                  <F3 id="1079" value="-6.6806599999999994e-001"/>
+                  <F4 id="1080" value="1.8366370000000000e+001"/>
+                  <F5 id="1081" value="-1.7642670000000001e+002"/>
+                  <F6 id="1082" value="1.0972580000000001e+002"/>
+                  <F7 id="1083" value="-3.4061900000000001e+001"/>
+                  <DFH298 id="875" value="-2.0599910000000001e+001" units="kJ/mole"/>
+                  <H298H0 id="878" value="1.0015240000000000e+001" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="1096" value="5.0000000000000000e+003" units="K"/>
+                  <Tmax id="1097" value="6.0000000000000000e+003" units="K"/>
+                  <F1 id="1098" value="5.8132170000000008e+002"/>
+                  <F2 id="1099" value="2.9804739999999998e+002"/>
+                  <F3 id="1100" value="-2.7736610000000002e+000"/>
+                  <F4 id="1101" value="6.0212350000000008e+001"/>
+                  <F5 id="1102" value="-5.0973800000000000e+002"/>
+                  <F6 id="1103" value="2.7671690000000001e+002"/>
+                  <F7 id="1104" value="-7.8806660000000008e+001"/>
+                  <DFH298 id="875" value="-2.0599910000000001e+001" units="kJ/mole"/>
+                  <H298H0 id="878" value="1.0015240000000000e+001" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+              </Thermodynamics>
+              <MolarMass id="880" value="3.4075800000000001e+001" units="g/mole"/>
+              <Composition>
+                <Element name="H" count="2.0000000000000000e+000"/>
+                <Element name="S" count="1.0000000000000000e+000"/>
+              </Composition>
+            </CommonProperty>
+            <PolyAtomicProperty AtomsCount="3">
+              <PolyAtomicStateProperty>
+                <Multiplet value="1" id="900"/>
+              </PolyAtomicStateProperty>
+            </PolyAtomicProperty>
+          </Substance>
+          <Substance id="1105" Name="SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+            <Name formula="SH" phase_type="g" charge="0"/>
+            <CommonProperty>
+              <Thermodynamics>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="1159" value="2.0000000000000000e+002" units="K"/>
+                  <Tmax id="1160" value="3.5000000000000000e+002" units="K"/>
+                  <F1 id="1161" value="2.7194150000000002e+002"/>
+                  <F2 id="1162" value="3.1493279999999999e+001"/>
+                  <F3 id="1163" value="-1.8815800000000000e-005"/>
+                  <F4 id="1164" value="8.8394200000000006e-003"/>
+                  <F5 id="1165" value="9.1028100000000009e+001"/>
+                  <F6 id="1166" value="-1.1556640000000000e+003"/>
+                  <F7 id="1167" value="5.4426930000000002e+003"/>
+                  <DFH298 id="1106" value="1.4187000000000000e+002" units="kJ/mole"/>
+                  <H298H0 id="1109" value="9.6395669999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="1180" value="3.5000000000000000e+002" units="K"/>
+                  <Tmax id="1181" value="5.5000000000000000e+002" units="K"/>
+                  <F1 id="1182" value="2.9331819999999999e+002"/>
+                  <F2 id="1183" value="3.7364160000000012e+001"/>
+                  <F3 id="1184" value="-4.1936799999999999e-004"/>
+                  <F4 id="1185" value="1.1679700000000000e-001"/>
+                  <F5 id="1186" value="-7.0267520000000005e+001"/>
+                  <F6 id="1187" value="-3.4775090000000013e+001"/>
+                  <F7 id="1188" value="1.2351750000000000e+003"/>
+                  <DFH298 id="1106" value="1.4187000000000000e+002" units="kJ/mole"/>
+                  <H298H0 id="1109" value="9.6395669999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="1201" value="5.5000000000000000e+002" units="K"/>
+                  <Tmax id="1202" value="7.5000000000000000e+002" units="K"/>
+                  <F1 id="1203" value="3.7236680000000001e+002"/>
+                  <F2 id="1204" value="6.1932750000000013e+001"/>
+                  <F3 id="1205" value="-4.3078999999999999e-003"/>
+                  <F4 id="1206" value="8.0577899999999991e-001"/>
+                  <F5 id="1207" value="-5.1123790000000002e+002"/>
+                  <F6 id="1208" value="1.9576420000000001e+003"/>
+                  <F7 id="1209" value="-3.5999279999999999e+003"/>
+                  <DFH298 id="1106" value="1.4187000000000000e+002" units="kJ/mole"/>
+                  <H298H0 id="1109" value="9.6395669999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="1222" value="7.5000000000000000e+002" units="K"/>
+                  <Tmax id="1223" value="9.0000000000000000e+002" units="K"/>
+                  <F1 id="1224" value="5.3151610000000005e+002"/>
+                  <F2 id="1225" value="1.1641200000000001e+002"/>
+                  <F3 id="1226" value="-1.9798500000000000e-002"/>
+                  <F4 id="1227" value="2.8567250000000000e+000"/>
+                  <F5 id="1228" value="-1.2370989999999999e+003"/>
+                  <F6 id="1229" value="4.3831019999999999e+003"/>
+                  <F7 id="1230" value="-7.9360610000000006e+003"/>
+                  <DFH298 id="1106" value="1.4187000000000000e+002" units="kJ/mole"/>
+                  <H298H0 id="1109" value="9.6395669999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="1243" value="9.0000000000000000e+002" units="K"/>
+                  <Tmax id="1244" value="1.0000000000000000e+003" units="K"/>
+                  <F1 id="1245" value="6.8882450000000006e+002"/>
+                  <F2 id="1246" value="1.7371340000000001e+002"/>
+                  <F3 id="1247" value="-4.2853799999999997e-002"/>
+                  <F4 id="1248" value="5.4259179999999994e+000"/>
+                  <F5 id="1249" value="-1.8765590000000000e+003"/>
+                  <F6 id="1250" value="6.1683879999999999e+003"/>
+                  <F7 id="1251" value="-1.0596180000000000e+004"/>
+                  <DFH298 id="1106" value="1.4187000000000000e+002" units="kJ/mole"/>
+                  <H298H0 id="1109" value="9.6395669999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="1264" value="1.0000000000000000e+003" units="K"/>
+                  <Tmax id="1265" value="2.0000000000000000e+003" units="K"/>
+                  <F1 id="1266" value="2.5907870000000003e+002"/>
+                  <F2 id="1267" value="2.5598070000000000e+001"/>
+                  <F3 id="1268" value="-2.5462999999999999e-004"/>
+                  <F4 id="1269" value="-2.2930600000000001e-001"/>
+                  <F5 id="1270" value="4.8627560000000003e+001"/>
+                  <F6 id="1271" value="-4.6665890000000012e+001"/>
+                  <F7 id="1272" value="2.5595269999999999e+001"/>
+                  <DFH298 id="1106" value="1.4187000000000000e+002" units="kJ/mole"/>
+                  <H298H0 id="1109" value="9.6395669999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="1285" value="2.0000000000000000e+003" units="K"/>
+                  <Tmax id="1286" value="3.2000000000000000e+003" units="K"/>
+                  <F1 id="1287" value="2.6531849999999997e+002"/>
+                  <F2 id="1288" value="2.8885760000000001e+001"/>
+                  <F3 id="1289" value="-7.6022199999999998e-003"/>
+                  <F4 id="1290" value="1.1648600000000001e-001"/>
+                  <F5 id="1291" value="3.2812199999999997e+001"/>
+                  <F6 id="1292" value="-2.7390370000000001e+001"/>
+                  <F7 id="1293" value="1.2883929999999999e+001"/>
+                  <DFH298 id="1106" value="1.4187000000000000e+002" units="kJ/mole"/>
+                  <H298H0 id="1109" value="9.6395669999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="1306" value="3.2000000000000000e+003" units="K"/>
+                  <Tmax id="1307" value="4.5000000000000000e+003" units="K"/>
+                  <F1 id="1308" value="2.8721870000000001e+002"/>
+                  <F2 id="1309" value="4.3981220000000000e+001"/>
+                  <F3 id="1310" value="-8.9483099999999996e-002"/>
+                  <F4 id="1311" value="2.5941860000000001e+000"/>
+                  <F5 id="1312" value="-1.3506090000000000e+001"/>
+                  <F6 id="1313" value="8.4123880000000000e+000"/>
+                  <F7 id="1314" value="-1.9927109999999999e+000"/>
+                  <DFH298 id="1106" value="1.4187000000000000e+002" units="kJ/mole"/>
+                  <H298H0 id="1109" value="9.6395669999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="1327" value="4.5000000000000000e+003" units="K"/>
+                  <Tmax id="1328" value="5.5000000000000000e+003" units="K"/>
+                  <F1 id="1329" value="3.3116210000000001e+002"/>
+                  <F2 id="1330" value="8.2944520000000011e+001"/>
+                  <F3 id="1331" value="-4.9026100000000000e-001"/>
+                  <F4 id="1332" value="1.1413430000000000e+001"/>
+                  <F5 id="1333" value="-9.9912670000000006e+001"/>
+                  <F6 id="1334" value="5.6505760000000002e+001"/>
+                  <F7 id="1335" value="-1.6325150000000001e+001"/>
+                  <DFH298 id="1106" value="1.4187000000000000e+002" units="kJ/mole"/>
+                  <H298H0 id="1109" value="9.6395669999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="1348" value="5.5000000000000000e+003" units="K"/>
+                  <Tmax id="1349" value="6.0000000000000000e+003" units="K"/>
+                  <F1 id="1350" value="3.6747289999999998e+002"/>
+                  <F2 id="1351" value="1.2156740000000001e+002"/>
+                  <F3 id="1352" value="-1.0648880000000001e+000"/>
+                  <F4 id="1353" value="2.1943709999999999e+001"/>
+                  <F5 id="1354" value="-1.7079380000000000e+002"/>
+                  <F6 id="1355" value="8.9048930000000013e+001"/>
+                  <F7 id="1356" value="-2.4299240000000001e+001"/>
+                  <DFH298 id="1106" value="1.4187000000000000e+002" units="kJ/mole"/>
+                  <H298H0 id="1109" value="9.6395669999999996e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+              </Thermodynamics>
+              <MolarMass id="1111" value="3.3067900000000002e+001" units="g/mole"/>
+              <Composition>
+                <Element name="H" count="1.0000000000000000e+000"/>
+                <Element name="S" count="1.0000000000000000e+000"/>
+              </Composition>
+            </CommonProperty>
+            <DiatomicProperty AtomsCount="2">
+              <DiatomicStateProperty>
+                <RotConst V="0.0000000000000000e+000" id="1122" units="1/cm"/>
+                <VibConst We="0.0000000000000000e+000" id="1123" units="1/cm"/>
+                <Multiplet value="1" id="1127"/>
+              </DiatomicStateProperty>
+            </DiatomicProperty>
+          </Substance>
+          <Substance id="1357" Name="H/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+            <Name formula="H" phase_type="g" charge="0"/>
+            <CommonProperty>
+              <Thermodynamics>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="1411" value="2.0000000000000000e+002" units="K"/>
+                  <Tmax id="1412" value="6.0000000000000000e+003" units="K"/>
+                  <F1 id="1413" value="1.6694770000000000e+002"/>
+                  <F2 id="1414" value="2.0786180000000002e+001"/>
+                  <F3 id="1415" value="0.0000000000000000e+000"/>
+                  <F4 id="1416" value="3.5527100000000001e-015"/>
+                  <F5 id="1417" value="0.0000000000000000e+000"/>
+                  <F6 id="1418" value="0.0000000000000000e+000"/>
+                  <F7 id="1419" value="0.0000000000000000e+000"/>
+                  <DFH298 id="1358" value="2.1799750000000000e+002" units="kJ/mole"/>
+                  <H298H0 id="1361" value="6.1974000000000000e+000" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+              </Thermodynamics>
+              <MolarMass id="1363" value="1.0079000000000000e+000" units="g/mole"/>
+              <Composition>
+                <Element name="H" count="1.0000000000000000e+000"/>
+              </Composition>
+            </CommonProperty>
+            <AtomProperty AtomsCount="1">
+              <AtomStateProperty>
+                <Multiplet value="1" id="1373"/>
+              </AtomStateProperty>
+            </AtomProperty>
+          </Substance>
+          <Substance id="1420" Name="S4/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+            <Name formula="S4" phase_type="g" charge="0"/>
+            <CommonProperty>
+              <Thermodynamics>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="1474" value="2.9814999999999998e+002" units="K"/>
+                  <Tmax id="1475" value="7.0000000000000000e+002" units="K"/>
+                  <F1 id="1476" value="3.8897268002124503e+002"/>
+                  <F2 id="1477" value="4.9728773613191002e+001"/>
+                  <F3 id="1478" value="-2.4575615200821839e-003"/>
+                  <F4 id="1479" value="5.9123893391913374e-001"/>
+                  <F5 id="1480" value="5.3883008509100398e+002"/>
+                  <F6 id="1481" value="-2.2518500047667312e+003"/>
+                  <F7 id="1482" value="5.1046545104880634e+003"/>
+                  <DFH298 id="1421" value="1.3563200000000001e+002" units="kJ/mole"/>
+                  <CP298 id="1422" value="6.5942999999999998e+001" units="J/mole/K"/>
+                  <S298 id="1423" value="2.9344799999999998e+002" units="J/mole/K"/>
+                  <H298H0 id="1424" value="1.4279999999999999e+001" units="kJ/mole"/>
+                  <DFH0 id="1425" value="1.3900000000000000e+002" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <IVTAN_ThermoInterpolation>
+                  <Tmin id="1495" value="7.0000000000000000e+002" units="K"/>
+                  <Tmax id="1496" value="6.0000000000000000e+003" units="K"/>
+                  <F1 id="1497" value="4.9159635644554822e+002"/>
+                  <F2 id="1498" value="8.2822940838701086e+001"/>
+                  <F3 id="1499" value="-9.7524913952369494e-003"/>
+                  <F4 id="1500" value="1.6577339410773670e+000"/>
+                  <F5 id="1501" value="1.0605436576614871e+000"/>
+                  <F6 id="1502" value="-8.0980357906351130e-001"/>
+                  <F7 id="1503" value="3.0782882207882423e-001"/>
+                  <DFH298 id="1421" value="1.3563200000000001e+002" units="kJ/mole"/>
+                  <CP298 id="1422" value="6.5942999999999998e+001" units="J/mole/K"/>
+                  <S298 id="1423" value="2.9344799999999998e+002" units="J/mole/K"/>
+                  <H298H0 id="1424" value="1.4279999999999999e+001" units="kJ/mole"/>
+                  <DFH0 id="1425" value="1.3900000000000000e+002" units="kJ/mole"/>
+                </IVTAN_ThermoInterpolation>
+                <NASA_ThermoInterpolation>
+                  <Tmin id="1516" value="2.9814999999999998e+002" units="K"/>
+                  <Tmax id="1517" value="1.0000000000000000e+003" units="K"/>
+                  <F1 id="1518" value="2.4270729830873261e+000"/>
+                  <F2 id="1519" value="3.0893453646198429e-002"/>
+                  <F3 id="1520" value="-5.3366183133432800e-005"/>
+                  <F4 id="1521" value="4.3089263785851662e-008"/>
+                  <F5 id="1522" value="-1.3282961583271560e-011"/>
+                  <F6 id="1523" value="1.4608617000237340e+004"/>
+                  <F7 id="1524" value="1.4271792751238760e+001"/>
+                  <DFH298 id="1421" value="1.3563200000000001e+002" units="kJ/mole"/>
+                  <CP298 id="1422" value="6.5942999999999998e+001" units="J/mole/K"/>
+                  <S298 id="1423" value="2.9344799999999998e+002" units="J/mole/K"/>
+                  <H298H0 id="1424" value="1.4279999999999999e+001" units="kJ/mole"/>
+                  <DFH0 id="1425" value="1.3900000000000000e+002" units="kJ/mole"/>
+                </NASA_ThermoInterpolation>
+                <NASA_ThermoInterpolation>
+                  <Tmin id="1537" value="1.0000000000000000e+003" units="K"/>
+                  <Tmax id="1538" value="6.0000000000000000e+003" units="K"/>
+                  <F1 id="1539" value="9.2729845703794034e+000"/>
+                  <F2 id="1540" value="7.1846769717295422e-004"/>
+                  <F3 id="1541" value="-2.7378662860186129e-007"/>
+                  <F4 id="1542" value="4.5782274097882282e-011"/>
+                  <F5 id="1543" value="-2.8022146153331941e-015"/>
+                  <F6 id="1544" value="1.3257571390054880e+004"/>
+                  <F7 id="1545" value="-1.8361514130292530e+001"/>
+                  <DFH298 id="1421" value="1.3563200000000001e+002" units="kJ/mole"/>
+                  <CP298 id="1422" value="6.5942999999999998e+001" units="J/mole/K"/>
+                  <S298 id="1423" value="2.9344799999999998e+002" units="J/mole/K"/>
+                  <H298H0 id="1424" value="1.4279999999999999e+001" units="kJ/mole"/>
+                  <DFH0 id="1425" value="1.3900000000000000e+002" units="kJ/mole"/>
+                </NASA_ThermoInterpolation>
+              </Thermodynamics>
+              <MolarMass id="1426" value="1.2824000000000001e+002" units="g/mole"/>
+              <AlternateName Name="Tetrasulfur" Lang="EN"/>
+              <Composition>
+                <Element name="S" count="4.0000000000000000e+000"/>
+              </Composition>
+            </CommonProperty>
+            <PolyAtomicProperty AtomsCount="4"/>
+          </Substance>
+        </Subsystem>
+      </Continuum>
+    </Phase>
+    <ChemicalProcess id="1546" Name="S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+M/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/&lt;=&gt;S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+M/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/" Used="true">
+      <RoleClassification>Not defined</RoleClassification>
+      <Coupled>false</Coupled>
+      <ForwardRateConstantApproximation>
+        <ArrheniusRateConstant used="true">
+          <Tmin id="1548" value="3.0000000000000000e+002" units="K"/>
+          <Tmax id="1549" value="3.0000000000000000e+004" units="K"/>
+          <N id="1551" value="1.0000000000000000e+000"/>
+          <Ea id="1552" value="3.4128500000000001e-001" units="kcal/mole"/>
+          <A id="1550" value="1.2699999999999751e-030" units="1/cm^x/s"/>
+        </ArrheniusRateConstant>
+      </ForwardRateConstantApproximation>
+    </ChemicalProcess>
+    <ChemicalProcess id="1553" Name="SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/&lt;=&gt;H2S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/" Used="true">
+      <RoleClassification>Not defined</RoleClassification>
+      <Coupled>false</Coupled>
+      <ForwardRateConstantApproximation>
+        <ArrheniusRateConstant used="true">
+          <Tmin id="1555" value="3.0000000000000000e+002" units="K"/>
+          <Tmax id="1556" value="3.0000000000000000e+004" units="K"/>
+          <N id="1558" value="0.0000000000000000e+000"/>
+          <Ea id="1559" value="0.0000000000000000e+000" units="kcal/mole"/>
+          <A id="1557" value="1.1999999999999860e-011" units="1/cm^x/s"/>
+        </ArrheniusRateConstant>
+      </ForwardRateConstantApproximation>
+    </ChemicalProcess>
+    <ChemicalProcess id="1560" Name="SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/&lt;=&gt;H/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/" Used="true">
+      <RoleClassification>Not defined</RoleClassification>
+      <Coupled>false</Coupled>
+      <ForwardRateConstantApproximation>
+        <ArrheniusRateConstant used="true">
+          <Tmin id="1562" value="3.0000000000000000e+002" units="K"/>
+          <Tmax id="1563" value="3.0000000000000000e+004" units="K"/>
+          <N id="1565" value="0.0000000000000000e+000"/>
+          <Ea id="1566" value="0.0000000000000000e+000" units="kcal/mole"/>
+          <A id="1564" value="4.5000000000000026e-010" units="1/cm^x/s"/>
+        </ArrheniusRateConstant>
+      </ForwardRateConstantApproximation>
+    </ChemicalProcess>
+    <ChemicalProcess id="1567" Name="H/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+H2S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/&lt;=&gt;H2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/" Used="true">
+      <RoleClassification>Not defined</RoleClassification>
+      <Coupled>false</Coupled>
+      <ForwardRateConstantApproximation>
+        <ArrheniusRateConstant used="true">
+          <Tmin id="1569" value="3.0000000000000000e+002" units="K"/>
+          <Tmax id="1570" value="3.0000000000000000e+004" units="K"/>
+          <N id="1572" value="0.0000000000000000e+000"/>
+          <Ea id="1573" value="1.7114000000000000e+000" units="kcal/mole"/>
+          <A id="1571" value="1.3000000000000112e-011" units="1/cm^x/s"/>
+        </ArrheniusRateConstant>
+      </ForwardRateConstantApproximation>
+    </ChemicalProcess>
+    <ChemicalProcess id="1574" Name="H/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/&lt;=&gt;H2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/" Used="true">
+      <RoleClassification>Not defined</RoleClassification>
+      <Coupled>false</Coupled>
+      <ForwardRateConstantApproximation>
+        <ArrheniusRateConstant used="true">
+          <Tmin id="1576" value="3.0000000000000000e+002" units="K"/>
+          <Tmax id="1577" value="3.0000000000000000e+004" units="K"/>
+          <N id="1579" value="0.0000000000000000e+000"/>
+          <Ea id="1580" value="0.0000000000000000e+000" units="kcal/mole"/>
+          <A id="1578" value="2.5000000000000095e-011" units="1/cm^x/s"/>
+        </ArrheniusRateConstant>
+      </ForwardRateConstantApproximation>
+    </ChemicalProcess>
+    <ChemicalProcess id="1581" Name="H2S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+M/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/&lt;=&gt;H/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+M/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/" Used="true">
+      <RoleClassification>Not defined</RoleClassification>
+      <Coupled>false</Coupled>
+      <ForwardRateConstantApproximation>
+        <ArrheniusRateConstant used="true">
+          <Tmin id="1583" value="3.0000000000000000e+002" units="K"/>
+          <Tmax id="1584" value="3.0000000000000000e+004" units="K"/>
+          <N id="1586" value="2.0000000000000000e+000"/>
+          <Ea id="1587" value="9.1539999999999999e+000" units="kcal/mole"/>
+          <A id="1585" value="1.3264999999999995e+002" units="1/cm^x/s"/>
+        </ArrheniusRateConstant>
+      </ForwardRateConstantApproximation>
+    </ChemicalProcess>
+    <ChemicalProcess id="1588" Name="S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+H2S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/&lt;=&gt;H2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/" Used="true">
+      <RoleClassification>Not defined</RoleClassification>
+      <Coupled>false</Coupled>
+      <ForwardRateConstantApproximation>
+        <ArrheniusRateConstant Comment="Baulch D.L. at al .Kinetic Data for High Temperature Reactions. v.3 (1976)." used="true">
+          <Tmin id="1590" value="3.0000000000000000e+002" units="K"/>
+          <Tmax id="1591" value="3.0000000000000000e+004" units="K"/>
+          <N id="1593" value="0.0000000000000000e+000"/>
+          <Ea id="1594" value="4.9749999999999996e+000" units="kcal/mole"/>
+          <A id="1592" value="9.9999999999999994e-012" units="1/cm^x/s"/>
+        </ArrheniusRateConstant>
+      </ForwardRateConstantApproximation>
+    </ChemicalProcess>
+    <ChemicalProcess id="1595" Name="SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/&lt;=&gt;H2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/" Used="true">
+      <RoleClassification>Not defined</RoleClassification>
+      <Coupled>false</Coupled>
+      <ForwardRateConstantApproximation>
+        <ArrheniusRateConstant Comment="Baulch D.L. at al. Kinetic Data for High Temperature rReactions. v.3. (1976)." used="true">
+          <Tmin id="1597" value="3.0000000000000000e+002" units="K"/>
+          <Tmax id="1598" value="3.0000000000000000e+004" units="K"/>
+          <N id="1600" value="0.0000000000000000e+000"/>
+          <Ea id="1601" value="0.0000000000000000e+000" units="kcal/mole"/>
+          <A id="1599" value="2.1600000000000034e-010" units="1/cm^x/s"/>
+        </ArrheniusRateConstant>
+      </ForwardRateConstantApproximation>
+    </ChemicalProcess>
+    <ChemicalProcess id="1602" Name="S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+M/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/&lt;=&gt;S4/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+M/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/" Used="true">
+      <RoleClassification>Not defined</RoleClassification>
+      <Coupled>false</Coupled>
+      <ForwardRateConstantApproximation>
+        <ArrheniusRateConstant Comment="Nicholas, J. E., Amodio, C. A., Baker, M. J., J. Chem. Soc. Faraday Trans. 1 75, 1868 (1979)" used="true">
+          <Tmin id="1604" value="3.0000000000000000e+002" units="K"/>
+          <Tmax id="1605" value="3.0000000000000000e+004" units="K"/>
+          <N id="1607" value="0.0000000000000000e+000"/>
+          <Ea id="1608" value="0.0000000000000000e+000" units="kcal/mole"/>
+          <A id="1606" value="2.5000000000000199e-031" units="1/cm^x/s"/>
+        </ArrheniusRateConstant>
+      </ForwardRateConstantApproximation>
+    </ChemicalProcess>
+  </Mechanism>
+  <Plots>
+    <plot name="Plot 0" properties="&lt;?xml version=&quot;1.0&quot;?&gt;&#10;&lt;PlotSettings&gt;&#10;  &lt;XAxis&gt;&#10;    &lt;Title&gt;t (s)&lt;/Title&gt;&#10;  &lt;/XAxis&gt;&#10;  &lt;YAxis&gt;&#10;    &lt;Title&gt;[1/cm3]&lt;/Title&gt;&#10;  &lt;/YAxis&gt;&#10;  &lt;Plot id=&quot;0&quot;&gt;&#10;    &lt;Title&gt;H2S&lt;/Title&gt;&#10;    &lt;Line color=&quot;#0000ff&quot;/&gt;&#10;  &lt;/Plot&gt;&#10;  &lt;Plot id=&quot;1&quot;&gt;&#10;    &lt;Title&gt;S2&lt;/Title&gt;&#10;    &lt;Line color=&quot;#0000ff&quot;/&gt;&#10;  &lt;/Plot&gt;&#10;  &lt;Plot id=&quot;2&quot;&gt;&#10;    &lt;Title&gt;H2&lt;/Title&gt;&#10;    &lt;Line color=&quot;#00008b&quot;/&gt;&#10;  &lt;/Plot&gt;&#10;  &lt;Plot id=&quot;3&quot;&gt;&#10;    &lt;Title&gt;H2S&lt;/Title&gt;&#10;  &lt;/Plot&gt;&#10;  &lt;Plot id=&quot;4&quot;&gt;&#10;    &lt;Title&gt;S2&lt;/Title&gt;&#10;    &lt;Line color=&quot;#ff0000&quot;/&gt;&#10;  &lt;/Plot&gt;&#10;  &lt;Plot id=&quot;5&quot;&gt;&#10;    &lt;Title&gt;H2&lt;/Title&gt;&#10;    &lt;Line color=&quot;#8b0000&quot;/&gt;&#10;  &lt;/Plot&gt;&#10;  &lt;Plot id=&quot;6&quot;&gt;&#10;    &lt;Title&gt;H2S&lt;/Title&gt;&#10;    &lt;Line color=&quot;#008000&quot;/&gt;&#10;  &lt;/Plot&gt;&#10;  &lt;Plot id=&quot;7&quot;&gt;&#10;    &lt;Title&gt;S4&lt;/Title&gt;&#10;    &lt;Line color=&quot;#006400&quot;/&gt;&#10;  &lt;/Plot&gt;&#10;&lt;/PlotSettings&gt;&#10;">
+      <curve is_visible="true" name="H2S" calc="2" reactor="38" table="General results" x_axis="0" y_axis="0" x_column="t (s)" y_column="H2S" properties="&lt;?xml version=&quot;1.0&quot;?&gt;&#10;&lt;PlotSettings&gt;&#10;  &lt;Title&gt;H2S&lt;/Title&gt;&#10;  &lt;Line color=&quot;#0000ff&quot;/&gt;&#10;&lt;/PlotSettings&gt;&#10;">
+        <dataModelOptions showRateDirections="false" concentrationUnits="1/cm3" complexDataPresentation="0"/>
+      </curve>
+      <curve is_visible="true" name="S2" calc="2" reactor="38" table="General results" x_axis="0" y_axis="0" x_column="t (s)" y_column="S2" properties="&lt;?xml version=&quot;1.0&quot;?&gt;&#10;&lt;PlotSettings&gt;&#10;  &lt;Title&gt;S2&lt;/Title&gt;&#10;  &lt;Line color=&quot;#0000ff&quot;/&gt;&#10;&lt;/PlotSettings&gt;&#10;">
+        <dataModelOptions showRateDirections="false" concentrationUnits="1/cm3" complexDataPresentation="0"/>
+      </curve>
+      <curve is_visible="true" name="H2" calc="2" reactor="38" table="General results" x_axis="0" y_axis="0" x_column="t (s)" y_column="H2" properties="&lt;?xml version=&quot;1.0&quot;?&gt;&#10;&lt;PlotSettings&gt;&#10;  &lt;Title&gt;H2&lt;/Title&gt;&#10;  &lt;Line color=&quot;#00008b&quot;/&gt;&#10;&lt;/PlotSettings&gt;&#10;">
+        <dataModelOptions showRateDirections="false" concentrationUnits="1/cm3" complexDataPresentation="0"/>
+      </curve>
+      <curve is_visible="true" name="H2S" calc="2" reactor="38" table="General results" x_axis="0" y_axis="0" x_column="t (s)" y_column="H2S" properties="&lt;?xml version=&quot;1.0&quot;?&gt;&#10;&lt;PlotSettings&gt;&#10;  &lt;Title&gt;H2S&lt;/Title&gt;&#10;&lt;/PlotSettings&gt;&#10;">
+        <dataModelOptions showRateDirections="false" concentrationUnits="1/cm3" complexDataPresentation="0"/>
+      </curve>
+      <curve is_visible="true" name="S2" calc="2" reactor="38" table="General results" x_axis="0" y_axis="0" x_column="t (s)" y_column="S2" properties="&lt;?xml version=&quot;1.0&quot;?&gt;&#10;&lt;PlotSettings&gt;&#10;  &lt;Title&gt;S2&lt;/Title&gt;&#10;  &lt;Line color=&quot;#ff0000&quot;/&gt;&#10;&lt;/PlotSettings&gt;&#10;">
+        <dataModelOptions showRateDirections="false" concentrationUnits="1/cm3" complexDataPresentation="0"/>
+      </curve>
+      <curve is_visible="true" name="H2" calc="2" reactor="38" table="General results" x_axis="0" y_axis="0" x_column="t (s)" y_column="H2" properties="&lt;?xml version=&quot;1.0&quot;?&gt;&#10;&lt;PlotSettings&gt;&#10;  &lt;Title&gt;H2&lt;/Title&gt;&#10;  &lt;Line color=&quot;#8b0000&quot;/&gt;&#10;&lt;/PlotSettings&gt;&#10;">
+        <dataModelOptions showRateDirections="false" concentrationUnits="1/cm3" complexDataPresentation="0"/>
+      </curve>
+      <curve is_visible="true" name="H2S" calc="2" reactor="38" table="General results" x_axis="0" y_axis="0" x_column="t (s)" y_column="H2S" properties="&lt;?xml version=&quot;1.0&quot;?&gt;&#10;&lt;PlotSettings&gt;&#10;  &lt;Title&gt;H2S&lt;/Title&gt;&#10;  &lt;Line color=&quot;#008000&quot;/&gt;&#10;&lt;/PlotSettings&gt;&#10;">
+        <dataModelOptions showRateDirections="false" concentrationUnits="1/cm3" complexDataPresentation="0"/>
+      </curve>
+      <curve is_visible="true" name="S4" calc="2" reactor="38" table="General results" x_axis="0" y_axis="0" x_column="t (s)" y_column="S4" properties="&lt;?xml version=&quot;1.0&quot;?&gt;&#10;&lt;PlotSettings&gt;&#10;  &lt;Title&gt;S4&lt;/Title&gt;&#10;  &lt;Line color=&quot;#006400&quot;/&gt;&#10;&lt;/PlotSettings&gt;&#10;">
+        <dataModelOptions showRateDirections="false" concentrationUnits="1/cm3" complexDataPresentation="0"/>
+      </curve>
+    </plot>
+  </Plots>
+  <postprocessor>
+    <reactors>
+      <reactor reactor_id="38">
+        <tables>
+          <table name="Input flow">
+            <scripts/>
+            <view_options complexDataPresentation="0">
+              <columnsSelector showRateDirections="false" units="1/cm3" sortDataMethod="0" showAZ="true"/>
+              <widgetPresentation hideZeros="false" transpose="false"/>
+              <columnsFilterSettiongs/>
+              <columnsOrderSettings method="0" orderAZ="true" rowNmber="0"/>
+              <rowsOrderSettings method="0" orderAZ="true" rowNmber="0"/>
+            </view_options>
+          </table>
+          <table name="General results">
+            <scripts/>
+            <view_options complexDataPresentation="0">
+              <columnsSelector showRateDirections="false" units="1/cm3" sortDataMethod="0" showAZ="true"/>
+              <widgetPresentation hideZeros="false" transpose="false"/>
+              <columnsFilterSettiongs/>
+              <columnsOrderSettings method="0" orderAZ="true" rowNmber="0"/>
+              <rowsOrderSettings method="0" orderAZ="true" rowNmber="0"/>
+            </view_options>
+          </table>
+        </tables>
+        <scripts/>
+      </reactor>
+    </reactors>
+    <tables/>
+    <scripts/>
+  </postprocessor>
+</Calculation>
