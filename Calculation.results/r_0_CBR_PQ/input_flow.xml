@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<TblDescription BinaryFilePath="input_flow.bin" SummFilePath="input_flow.summ" Caption="Input flow">
+  <Column Name="Mass flow rate (kg/h)" Role="model_param"/>
+  <Column Name="Volume flow rate (norm.m3/h)" Role="model_param"/>
+  <Column Name="Molar flow rate (mole/h)" Role="model_param"/>
+</TblDescription>

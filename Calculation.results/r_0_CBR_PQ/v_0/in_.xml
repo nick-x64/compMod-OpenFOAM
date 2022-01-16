@@ -1,0 +1,505 @@
+<?xml version="1.0"?>
+<InputData>
+  <ReactorID ID="CBR_PQ"/>
+  <Mechanism Name="H2S Pyrolysis 4" Comment="1.Potapkin B.V., Rusanov V.D., Strelkova M.I., Fridman A.A. Kinetika dissotsiatsii serovodoroda v termicheskoy plazme. &#x2014; Khimiya vysokikh energiy, 1988, t. 22, &#x2116;6, s. 537-540.           2. Baulch D. L. et al. Evaluated Kinetics Data for High Temperature Reactions. L.: University of Leeds, 1976.">
+    <Phase Name="Gas phase" Type="g">
+      <Continuum Type="">
+        <Subsystem Type="Isothermic">
+          <Substance id="139" Name="Ar/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+            <Name formula="Ar" phase_type="g" charge="0"/>
+            <CommonProperty>
+              <Thermodynamics>
+                <IVTAN_ThermoInterpolation Tmin="2.0000000000000000e+002" Tmax="6.0000000000000000e+003" F1="2.0707630000000000e+002" F2="2.0786180000000002e+001" F3="0.0000000000000000e+000" F4="0.0000000000000000e+000" F5="0.0000000000000000e+000" F6="0.0000000000000000e+000" F7="0.0000000000000000e+000" DFH298="0.0000000000000000e+000" H298H0="6.1974000000000000e+000" Enthalpy="-6.1974000000000000e+000"/>
+              </Thermodynamics>
+              <MolarMass id="145" value="3.9948000000000000e+001" units="g/mole"/>
+              <Composition>
+                <Element name="Ar" count="1.0000000000000000e+000"/>
+              </Composition>
+            </CommonProperty>
+            <AtomProperty AtomsCount="1">
+              <AtomStateProperty>
+                <Multiplet value="1"/>
+              </AtomStateProperty>
+            </AtomProperty>
+          </Substance>
+          <Substance id="202" Name="S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+            <Name formula="S2" phase_type="g" charge="0"/>
+            <CommonProperty>
+              <Thermodynamics>
+                <IVTAN_ThermoInterpolation Tmin="2.0000000000000000e+002" Tmax="5.0000000000000000e+002" F1="2.7838749999999999e+002" F2="2.4046330000000001e+001" F3="-3.9320800000000003e-006" F4="1.5410599999999999e-003" F5="2.0292760000000001e+002" F6="-7.8028450000000009e+002" F7="1.6628850000000000e+003" DFH298="1.2859940000000000e+002" H298H0="8.5863459999999989e+000" Enthalpy="1.2001305400000001e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="5.0000000000000000e+002" Tmax="8.0000000000000000e+002" F1="2.8346789999999999e+002" F2="2.5592919999999999e+001" F3="-2.2120399999999999e-004" F4="4.2258499999999997e-002" F5="1.7309000000000000e+002" F6="-6.3382979999999998e+002" F7="1.2723270000000000e+003" DFH298="1.2859940000000000e+002" H298H0="8.5863459999999989e+000" Enthalpy="1.2001305400000001e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="8.0000000000000000e+002" Tmax="1.0000000000000000e+003" F1="2.9959280000000001e+002" F2="3.1254059999999999e+001" F3="-2.0947700000000001e-003" F4="2.7185399999999998e-001" F5="1.0285720000000001e+002" F6="-4.1459769999999997e+002" F7="9.0498910000000001e+002" DFH298="1.2859940000000000e+002" H298H0="8.5863459999999989e+000" Enthalpy="1.2001305400000001e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="1.0000000000000000e+003" Tmax="2.2000000000000000e+003" F1="3.0656650000000002e+002" F2="3.2117620000000002e+001" F3="-1.8211300000000000e-004" F4="1.4023099999999999e-001" F5="3.4732729999999997e+001" F6="-3.0494610000000002e+001" F7="1.6030690000000000e+001" DFH298="1.2859940000000000e+002" H298H0="8.5863459999999989e+000" Enthalpy="1.2001305400000001e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="2.2000000000000000e+003" Tmax="3.5000000000000000e+003" F1="3.1085280000000000e+002" F2="3.4488840000000003e+001" F3="-6.5463400000000003e-003" F4="4.1337299999999999e-001" F5="2.4304620000000000e+001" F6="-1.8862340000000000e+001" F7="9.0037679999999991e+000" DFH298="1.2859940000000000e+002" H298H0="8.5863459999999989e+000" Enthalpy="1.2001305400000001e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="3.5000000000000000e+003" Tmax="5.0000000000000000e+003" F1="3.2567149999999998e+002" F2="4.5407110000000003e+001" F3="-7.7941399999999994e-002" F4="2.3811170000000002e+000" F5="-6.2050859999999997e+000" F6="2.6164860000000001e+000" F7="8.7395999999999996e-001" DFH298="1.2859940000000000e+002" H298H0="8.5863459999999989e+000" Enthalpy="1.2001305400000001e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="5.0000000000000000e+003" Tmax="6.0000000000000000e+003" F1="3.5857940000000002e+002" F2="7.7717680000000001e+001" F3="-4.9179600000000001e-001" F4="1.0540910000000000e+001" F5="-7.0450130000000001e+001" F6="3.4691530000000000e+001" F7="-7.7042099999999998e+000" DFH298="1.2859940000000000e+002" H298H0="8.5863459999999989e+000" Enthalpy="1.2001305400000001e+002"/>
+              </Thermodynamics>
+              <MolarMass id="208" value="6.4120000000000005e+001" units="g/mole"/>
+              <Composition>
+                <Element name="S" count="2.0000000000000000e+000"/>
+              </Composition>
+            </CommonProperty>
+            <DiatomicProperty AtomsCount="2">
+              <DiatomicStateProperty>
+                <RotConst V="0.0000000000000000e+000"/>
+                <VibConst We="0.0000000000000000e+000"/>
+                <Multiplet value="1"/>
+              </DiatomicStateProperty>
+            </DiatomicProperty>
+          </Substance>
+          <Substance id="391" Name="S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+            <Name formula="S" phase_type="g" charge="0"/>
+            <CommonProperty>
+              <Thermodynamics>
+                <IVTAN_ThermoInterpolation Tmin="2.0000000000000000e+002" Tmax="3.5000000000000000e+002" F1="2.1201120000000000e+002" F2="2.0078980000000001e+001" F3="-1.8804099999999998e-005" F4="8.6065800000000008e-003" F5="1.5826589999999999e+002" F6="-1.4079369999999999e+003" F7="5.3731250000000000e+003" DFH298="2.7697879999999998e+002" H298H0="6.7010439999999996e+000" Enthalpy="2.7027775599999995e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="3.5000000000000000e+002" Tmax="5.0000000000000000e+002" F1="2.2549070000000000e+002" F2="2.3750720000000001e+001" F3="-2.5399199999999998e-004" F4="7.4066199999999999e-002" F5="5.4455120000000008e+001" F6="-6.6804719999999998e+002" F7="2.5369859999999999e+003" DFH298="2.7697879999999998e+002" H298H0="6.7010439999999996e+000" Enthalpy="2.7027775599999995e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="5.0000000000000000e+002" Tmax="7.0000000000000000e+002" F1="2.7159910000000002e+002" F2="3.7712069999999997e+001" F3="-2.1134499999999998e-003" F4="4.3343799999999999e-001" F5="-2.1824690000000001e+002" F6="6.7156540000000007e+002" F7="-9.9485940000000005e+002" DFH298="2.7697879999999998e+002" H298H0="6.7010439999999996e+000" Enthalpy="2.7027775599999995e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="7.0000000000000000e+002" Tmax="9.0000000000000000e+002" F1="3.9738249999999999e+002" F2="7.9880040000000008e+001" F3="-1.2732700000000000e-002" F4="1.9267510000000001e+000" F5="-8.1609860000000003e+002" F6="2.7996779999999999e+003" F7="-5.0524059999999999e+003" DFH298="2.7697879999999998e+002" H298H0="6.7010439999999996e+000" Enthalpy="2.7027775599999995e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="9.0000000000000000e+002" Tmax="1.0000000000000000e+003" F1="6.7428150000000005e+002" F2="1.8126689999999999e+002" F3="-5.4800000000000001e-002" F4="6.5402820000000004e+000" F5="-1.9323389999999999e+003" F6="5.8782930000000006e+003" F7="-9.5902839999999997e+003" DFH298="2.7697879999999998e+002" H298H0="6.7010439999999996e+000" Enthalpy="2.7027775599999995e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="1.0000000000000000e+003" Tmax="2.0000000000000000e+003" F1="2.2890459999999999e+002" F2="2.3642029999999998e+001" F3="1.9356500000000001e-004" F4="-1.2178599999999999e-002" F5="-1.8453690000000002e+001" F6="2.7927070000000001e+001" F7="-1.7684069999999998e+001" DFH298="2.7697879999999998e+002" H298H0="6.7010439999999996e+000" Enthalpy="2.7027775599999995e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="2.0000000000000000e+003" Tmax="3.2000000000000000e+003" F1="2.2416130000000001e+002" F2="2.1142820000000000e+001" F3="5.7790200000000002e-003" F4="-2.7504200000000001e-001" F5="-6.4312519999999997e+000" F6="1.3274310000000000e+001" F7="-8.0212349999999990e+000" DFH298="2.7697879999999998e+002" H298H0="6.7010439999999996e+000" Enthalpy="2.7027775599999995e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="3.2000000000000000e+003" Tmax="4.5000000000000000e+003" F1="2.0751320000000001e+002" F2="9.6675690000000003e+000" F3="6.8023100000000003e-002" F4="-2.1585369999999999e+000" F5="2.8778919999999999e+001" F6="-1.3942190000000000e+001" F7="3.2876690000000002e+000" DFH298="2.7697879999999998e+002" H298H0="6.7010439999999996e+000" Enthalpy="2.7027775599999995e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="4.5000000000000000e+003" Tmax="5.5000000000000000e+003" F1="1.7410860000000000e+002" F2="-1.9951260000000001e+001" F3="3.7268299999999999e-001" F4="-8.8626819999999995e+000" F5="9.4462860000000006e+001" F6="-5.0501470000000012e+001" F7="1.4182800000000000e+001" DFH298="2.7697879999999998e+002" H298H0="6.7010439999999996e+000" Enthalpy="2.7027775599999995e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="5.5000000000000000e+003" Tmax="6.0000000000000000e+003" F1="1.4650080000000000e+002" F2="-4.9317180000000008e+001" F3="8.0959399999999992e-001" F4="-1.6869190000000000e+001" F5="1.4835509999999999e+002" F6="-7.5244450000000001e+001" F7="2.0245560000000001e+001" DFH298="2.7697879999999998e+002" H298H0="6.7010439999999996e+000" Enthalpy="2.7027775599999995e+002"/>
+              </Thermodynamics>
+              <MolarMass id="397" value="3.2060000000000002e+001" units="g/mole"/>
+              <Composition>
+                <Element name="S" count="1.0000000000000000e+000"/>
+              </Composition>
+            </CommonProperty>
+            <AtomProperty AtomsCount="1">
+              <AtomStateProperty>
+                <Multiplet value="1"/>
+              </AtomStateProperty>
+            </AtomProperty>
+          </Substance>
+          <Substance id="643" Name="H2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+            <Name formula="H2" phase_type="g" charge="0"/>
+            <CommonProperty>
+              <Thermodynamics>
+                <IVTAN_ThermoInterpolation Tmin="2.0000000000000000e+002" Tmax="3.5000000000000000e+002" F1="1.6987710000000001e+002" F2="2.0480409999999999e+001" F3="-2.2743099999999999e-005" F4="1.0442200000000000e-002" F5="2.8233650000000000e+002" F6="-2.0111880000000001e+003" F7="7.2248879999999999e+003" DFH298="0.0000000000000000e+000" H298H0="7.6320549999999994e+000" Enthalpy="-7.6320549999999994e+000"/>
+                <IVTAN_ThermoInterpolation Tmin="3.5000000000000000e+002" Tmax="5.0000000000000000e+002" F1="1.8767269999999999e+002" F2="2.5337669999999999e+001" F3="-3.3871999999999998e-004" F4="9.7698999999999994e-002" F5="1.4598580000000001e+002" F6="-1.0456479999999999e+003" F7="3.5445140000000001e+003" DFH298="0.0000000000000000e+000" H298H0="7.6320549999999994e+000" Enthalpy="-7.6320549999999994e+000"/>
+                <IVTAN_ThermoInterpolation Tmin="5.0000000000000000e+002" Tmax="6.5000000000000000e+002" F1="2.3446729999999999e+002" F2="3.9443800000000003e+001" F3="-2.1592899999999999e-003" F4="4.5528900000000000e-001" F5="-1.3345779999999999e+002" F6="3.4452650000000000e+002" F7="-1.6076849999999999e+002" DFH298="0.0000000000000000e+000" H298H0="7.6320549999999994e+000" Enthalpy="-7.6320549999999994e+000"/>
+                <IVTAN_ThermoInterpolation Tmin="6.5000000000000000e+002" Tmax="8.0000000000000000e+002" F1="3.2309429999999998e+002" F2="6.8371610000000004e+001" F3="-8.3360499999999994e-003" F4="1.3993679999999999e+000" F5="-5.7771510000000001e+002" F6="2.0543110000000001e+003" F7="-3.6787379999999998e+003" DFH298="0.0000000000000000e+000" H298H0="7.6320549999999994e+000" Enthalpy="-7.6320549999999994e+000"/>
+                <IVTAN_ThermoInterpolation Tmin="8.0000000000000000e+002" Tmax="1.0000000000000000e+003" F1="5.1624070000000006e+002" F2="1.3621879999999999e+002" F3="-3.0685799999999999e-002" F4="4.1498689999999998e+000" F5="-1.4164250000000000e+003" F6="4.6524130000000014e+003" F7="-7.9815420000000004e+003" DFH298="0.0000000000000000e+000" H298H0="7.6320549999999994e+000" Enthalpy="-7.6320549999999994e+000"/>
+                <IVTAN_ThermoInterpolation Tmin="1.0000000000000000e+003" Tmax="2.5000000000000000e+003" F1="1.9202719999999999e+002" F2="2.4523830000000000e+001" F3="-1.1309400000000000e-004" F4="-7.8398099999999998e-002" F5="3.3223590000000002e+001" F6="-1.7721769999999999e+001" F7="6.6713769999999997e+000" DFH298="0.0000000000000000e+000" H298H0="7.6320549999999994e+000" Enthalpy="-7.6320549999999994e+000"/>
+                <IVTAN_ThermoInterpolation Tmin="2.5000000000000000e+003" Tmax="4.0000000000000000e+003" F1="1.9489869999999999e+002" F2="2.6237829999999999e+001" F3="-6.1316200000000000e-003" F4="1.4722299999999999e-001" F5="2.6611529999999998e+001" F6="-1.1233720000000000e+001" F7="3.2132600000000000e+000" DFH298="0.0000000000000000e+000" H298H0="7.6320549999999994e+000" Enthalpy="-7.6320549999999994e+000"/>
+                <IVTAN_ThermoInterpolation Tmin="4.0000000000000000e+003" Tmax="5.0000000000000000e+003" F1="2.0251750000000001e+002" F2="3.2377570000000013e+001" F3="-5.6742599999999997e-002" F4="1.3898610000000000e+000" F5="1.1346450000000001e+001" F6="-1.6836310000000001e+000" F7="6.0617400000000004e-003" DFH298="0.0000000000000000e+000" H298H0="7.6320549999999994e+000" Enthalpy="-7.6320549999999994e+000"/>
+                <IVTAN_ThermoInterpolation Tmin="5.0000000000000000e+003" Tmax="6.0000000000000000e+003" F1="2.0938280000000000e+002" F2="3.9129890000000003e+001" F3="-1.4287500000000000e-001" F4="3.0948120000000001e+000" F5="-2.0298189999999998e+000" F6="4.9436209999999994e+000" F7="-1.7458520000000000e+000" DFH298="0.0000000000000000e+000" H298H0="7.6320549999999994e+000" Enthalpy="-7.6320549999999994e+000"/>
+              </Thermodynamics>
+              <MolarMass id="649" value="2.0158000000000000e+000" units="g/mole"/>
+              <Composition>
+                <Element name="H" count="2.0000000000000000e+000"/>
+              </Composition>
+            </CommonProperty>
+            <DiatomicProperty AtomsCount="2">
+              <DiatomicStateProperty>
+                <RotConst V="0.0000000000000000e+000"/>
+                <VibConst We="0.0000000000000000e+000"/>
+                <Multiplet value="1"/>
+              </DiatomicStateProperty>
+            </DiatomicProperty>
+          </Substance>
+          <Substance id="874" Name="H2S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+            <Name formula="H2S" phase_type="g" charge="0"/>
+            <CommonProperty>
+              <Thermodynamics>
+                <IVTAN_ThermoInterpolation Tmin="2.0000000000000000e+002" Tmax="4.0000000000000000e+002" F1="2.9248439999999999e+002" F2="3.3892850000000003e+001" F3="9.2124899999999996e-006" F4="-4.0453099999999999e-003" F5="-6.0824170000000002e+001" F6="9.1106270000000006e+002" F7="-2.8019989999999998e+003" DFH298="-2.0599910000000001e+001" H298H0="1.0015240000000000e+001" Enthalpy="-3.0615150000000000e+001"/>
+                <IVTAN_ThermoInterpolation Tmin="4.0000000000000000e+002" Tmax="6.5000000000000000e+002" F1="2.8053399999999999e+002" F2="3.0479600000000001e+001" F3="3.1842399999999999e-004" F4="-7.6310999999999990e-002" F5="2.0801890000000000e+001" F6="4.1595940000000002e+002" F7="-1.1748589999999999e+003" DFH298="-2.0599910000000001e+001" H298H0="1.0015240000000000e+001" Enthalpy="-3.0615150000000000e+001"/>
+                <IVTAN_ThermoInterpolation Tmin="6.5000000000000000e+002" Tmax="8.0000000000000000e+002" F1="2.3605940000000001e+002" F2="1.5915369999999999e+001" F3="3.5204199999999998e-003" F4="-5.5754700000000001e-001" F5="2.4277430000000001e+002" F6="-4.3606560000000002e+002" F7="5.8235800000000006e+002" DFH298="-2.0599910000000001e+001" H298H0="1.0015240000000000e+001" Enthalpy="-3.0615150000000000e+001"/>
+                <IVTAN_ThermoInterpolation Tmin="8.0000000000000000e+002" Tmax="1.0000000000000000e+003" F1="1.9469909999999999e+002" F2="1.2694690000000000e+000" F3="8.5423700000000005e-003" F4="-1.1641239999999999e+000" F5="4.1949979999999999e+002" F6="-9.6891040000000010e+002" F7="1.4387560000000001e+003" DFH298="-2.0599910000000001e+001" H298H0="1.0015240000000000e+001" Enthalpy="-3.0615150000000000e+001"/>
+                <IVTAN_ThermoInterpolation Tmin="1.0000000000000000e+003" Tmax="1.8000000000000000e+003" F1="2.6228190000000001e+002" F2="2.5755389999999998e+001" F3="-5.7167399999999999e-004" F4="-8.5750399999999991e-002" F5="1.3970570000000001e+002" F6="-1.4281020000000001e+002" F7="8.2892610000000005e+001" DFH298="-2.0599910000000001e+001" H298H0="1.0015240000000000e+001" Enthalpy="-3.0615150000000000e+001"/>
+                <IVTAN_ThermoInterpolation Tmin="1.8000000000000000e+003" Tmax="2.8000000000000000e+003" F1="2.7565240000000000e+002" F2="3.2421780000000012e+001" F3="-1.2549899999999999e-002" F4="5.4333799999999999e-001" F5="1.0401949999999999e+002" F6="-9.4498210000000014e+001" F7="4.7572710000000001e+001" DFH298="-2.0599910000000001e+001" H298H0="1.0015240000000000e+001" Enthalpy="-3.0615150000000000e+001"/>
+                <IVTAN_ThermoInterpolation Tmin="2.8000000000000000e+003" Tmax="3.8000000000000000e+003" F1="3.1651350000000002e+002" F2="5.8048810000000003e+001" F3="-1.1666600000000001e-001" F4="4.1850310000000004e+000" F5="1.3287470000000001e+001" F6="-1.3675689999999999e+001" F7="8.9278890000000004e+000" DFH298="-2.0599910000000001e+001" H298H0="1.0015240000000000e+001" Enthalpy="-3.0615150000000000e+001"/>
+                <IVTAN_ThermoInterpolation Tmin="3.8000000000000000e+003" Tmax="5.0000000000000000e+003" F1="4.1048260000000010e+002" F2="1.3126079999999999e+002" F3="-6.6806599999999994e-001" F4="1.8366370000000000e+001" F5="-1.7642670000000001e+002" F6="1.0972580000000001e+002" F7="-3.4061900000000001e+001" DFH298="-2.0599910000000001e+001" H298H0="1.0015240000000000e+001" Enthalpy="-3.0615150000000000e+001"/>
+                <IVTAN_ThermoInterpolation Tmin="5.0000000000000000e+003" Tmax="6.0000000000000000e+003" F1="5.8132170000000008e+002" F2="2.9804739999999998e+002" F3="-2.7736610000000002e+000" F4="6.0212350000000008e+001" F5="-5.0973800000000000e+002" F6="2.7671690000000001e+002" F7="-7.8806660000000008e+001" DFH298="-2.0599910000000001e+001" H298H0="1.0015240000000000e+001" Enthalpy="-3.0615150000000000e+001"/>
+              </Thermodynamics>
+              <MolarMass id="880" value="3.4075800000000001e+001" units="g/mole"/>
+              <Composition>
+                <Element name="H" count="2.0000000000000000e+000"/>
+                <Element name="S" count="1.0000000000000000e+000"/>
+              </Composition>
+            </CommonProperty>
+            <PolyAtomicProperty AtomsCount="3">
+              <PolyAtomicStateProperty>
+                <Multiplet value="1"/>
+              </PolyAtomicStateProperty>
+            </PolyAtomicProperty>
+          </Substance>
+          <Substance id="1105" Name="SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+            <Name formula="SH" phase_type="g" charge="0"/>
+            <CommonProperty>
+              <Thermodynamics>
+                <IVTAN_ThermoInterpolation Tmin="2.0000000000000000e+002" Tmax="3.5000000000000000e+002" F1="2.7194150000000002e+002" F2="3.1493279999999999e+001" F3="-1.8815800000000000e-005" F4="8.8394200000000006e-003" F5="9.1028100000000009e+001" F6="-1.1556640000000000e+003" F7="5.4426930000000002e+003" DFH298="1.4187000000000000e+002" H298H0="9.6395669999999996e+000" Enthalpy="1.3223043300000000e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="3.5000000000000000e+002" Tmax="5.5000000000000000e+002" F1="2.9331819999999999e+002" F2="3.7364160000000012e+001" F3="-4.1936799999999999e-004" F4="1.1679700000000000e-001" F5="-7.0267520000000005e+001" F6="-3.4775090000000013e+001" F7="1.2351750000000000e+003" DFH298="1.4187000000000000e+002" H298H0="9.6395669999999996e+000" Enthalpy="1.3223043300000000e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="5.5000000000000000e+002" Tmax="7.5000000000000000e+002" F1="3.7236680000000001e+002" F2="6.1932750000000013e+001" F3="-4.3078999999999999e-003" F4="8.0577899999999991e-001" F5="-5.1123790000000002e+002" F6="1.9576420000000001e+003" F7="-3.5999279999999999e+003" DFH298="1.4187000000000000e+002" H298H0="9.6395669999999996e+000" Enthalpy="1.3223043300000000e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="7.5000000000000000e+002" Tmax="9.0000000000000000e+002" F1="5.3151610000000005e+002" F2="1.1641200000000001e+002" F3="-1.9798500000000000e-002" F4="2.8567250000000000e+000" F5="-1.2370989999999999e+003" F6="4.3831019999999999e+003" F7="-7.9360610000000006e+003" DFH298="1.4187000000000000e+002" H298H0="9.6395669999999996e+000" Enthalpy="1.3223043300000000e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="9.0000000000000000e+002" Tmax="1.0000000000000000e+003" F1="6.8882450000000006e+002" F2="1.7371340000000001e+002" F3="-4.2853799999999997e-002" F4="5.4259179999999994e+000" F5="-1.8765590000000000e+003" F6="6.1683879999999999e+003" F7="-1.0596180000000000e+004" DFH298="1.4187000000000000e+002" H298H0="9.6395669999999996e+000" Enthalpy="1.3223043300000000e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="1.0000000000000000e+003" Tmax="2.0000000000000000e+003" F1="2.5907870000000003e+002" F2="2.5598070000000000e+001" F3="-2.5462999999999999e-004" F4="-2.2930600000000001e-001" F5="4.8627560000000003e+001" F6="-4.6665890000000012e+001" F7="2.5595269999999999e+001" DFH298="1.4187000000000000e+002" H298H0="9.6395669999999996e+000" Enthalpy="1.3223043300000000e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="2.0000000000000000e+003" Tmax="3.2000000000000000e+003" F1="2.6531849999999997e+002" F2="2.8885760000000001e+001" F3="-7.6022199999999998e-003" F4="1.1648600000000001e-001" F5="3.2812199999999997e+001" F6="-2.7390370000000001e+001" F7="1.2883929999999999e+001" DFH298="1.4187000000000000e+002" H298H0="9.6395669999999996e+000" Enthalpy="1.3223043300000000e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="3.2000000000000000e+003" Tmax="4.5000000000000000e+003" F1="2.8721870000000001e+002" F2="4.3981220000000000e+001" F3="-8.9483099999999996e-002" F4="2.5941860000000001e+000" F5="-1.3506090000000000e+001" F6="8.4123880000000000e+000" F7="-1.9927109999999999e+000" DFH298="1.4187000000000000e+002" H298H0="9.6395669999999996e+000" Enthalpy="1.3223043300000000e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="4.5000000000000000e+003" Tmax="5.5000000000000000e+003" F1="3.3116210000000001e+002" F2="8.2944520000000011e+001" F3="-4.9026100000000000e-001" F4="1.1413430000000000e+001" F5="-9.9912670000000006e+001" F6="5.6505760000000002e+001" F7="-1.6325150000000001e+001" DFH298="1.4187000000000000e+002" H298H0="9.6395669999999996e+000" Enthalpy="1.3223043300000000e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="5.5000000000000000e+003" Tmax="6.0000000000000000e+003" F1="3.6747289999999998e+002" F2="1.2156740000000001e+002" F3="-1.0648880000000001e+000" F4="2.1943709999999999e+001" F5="-1.7079380000000000e+002" F6="8.9048930000000013e+001" F7="-2.4299240000000001e+001" DFH298="1.4187000000000000e+002" H298H0="9.6395669999999996e+000" Enthalpy="1.3223043300000000e+002"/>
+              </Thermodynamics>
+              <MolarMass id="1111" value="3.3067900000000002e+001" units="g/mole"/>
+              <Composition>
+                <Element name="H" count="1.0000000000000000e+000"/>
+                <Element name="S" count="1.0000000000000000e+000"/>
+              </Composition>
+            </CommonProperty>
+            <DiatomicProperty AtomsCount="2">
+              <DiatomicStateProperty>
+                <RotConst V="0.0000000000000000e+000"/>
+                <VibConst We="0.0000000000000000e+000"/>
+                <Multiplet value="1"/>
+              </DiatomicStateProperty>
+            </DiatomicProperty>
+          </Substance>
+          <Substance id="1357" Name="H/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+            <Name formula="H" phase_type="g" charge="0"/>
+            <CommonProperty>
+              <Thermodynamics>
+                <IVTAN_ThermoInterpolation Tmin="2.0000000000000000e+002" Tmax="6.0000000000000000e+003" F1="1.6694770000000000e+002" F2="2.0786180000000002e+001" F3="0.0000000000000000e+000" F4="3.5527100000000001e-015" F5="0.0000000000000000e+000" F6="0.0000000000000000e+000" F7="0.0000000000000000e+000" DFH298="2.1799750000000000e+002" H298H0="6.1974000000000000e+000" Enthalpy="2.1180010000000001e+002"/>
+              </Thermodynamics>
+              <MolarMass id="1363" value="1.0079000000000000e+000" units="g/mole"/>
+              <Composition>
+                <Element name="H" count="1.0000000000000000e+000"/>
+              </Composition>
+            </CommonProperty>
+            <AtomProperty AtomsCount="1">
+              <AtomStateProperty>
+                <Multiplet value="1"/>
+              </AtomStateProperty>
+            </AtomProperty>
+          </Substance>
+          <Substance id="1420" Name="S4/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+            <Name formula="S4" phase_type="g" charge="0"/>
+            <CommonProperty>
+              <Thermodynamics>
+                <IVTAN_ThermoInterpolation Tmin="2.9814999999999998e+002" Tmax="7.0000000000000000e+002" F1="3.8897268002124503e+002" F2="4.9728773613191002e+001" F3="-2.4575615200821839e-003" F4="5.9123893391913374e-001" F5="5.3883008509100398e+002" F6="-2.2518500047667312e+003" F7="5.1046545104880634e+003" DFH298="1.3563200000000001e+002" CP298="6.5942999999999998e+001" S298="2.9344799999999998e+002" H298H0="1.4279999999999999e+001" DFH0="1.3900000000000000e+002" Enthalpy="1.2135200000000000e+002"/>
+                <IVTAN_ThermoInterpolation Tmin="7.0000000000000000e+002" Tmax="6.0000000000000000e+003" F1="4.9159635644554822e+002" F2="8.2822940838701086e+001" F3="-9.7524913952369494e-003" F4="1.6577339410773670e+000" F5="1.0605436576614871e+000" F6="-8.0980357906351130e-001" F7="3.0782882207882423e-001" DFH298="1.3563200000000001e+002" CP298="6.5942999999999998e+001" S298="2.9344799999999998e+002" H298H0="1.4279999999999999e+001" DFH0="1.3900000000000000e+002" Enthalpy="1.2135200000000000e+002"/>
+              </Thermodynamics>
+              <MolarMass id="1426" value="1.2824000000000001e+002" units="g/mole"/>
+              <AlternateName Name="Tetrasulfur" Lang="EN"/>
+              <Composition>
+                <Element name="S" count="4.0000000000000000e+000"/>
+              </Composition>
+            </CommonProperty>
+            <PolyAtomicProperty AtomsCount="4"/>
+          </Substance>
+        </Subsystem>
+      </Continuum>
+    </Phase>
+    <ChemicalProcess id="1546" Name="S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+M/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/&lt;=&gt;S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+M/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+      <Direction>Reversible</Direction>
+      <Reagents>
+        <Reagent Multiplier="2.0000000000000000e+000">
+          <Chemical>
+            <Name Name="S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+      </Reagents>
+      <Products>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+      </Products>
+      <Buffers>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <ThirdBody/>
+        </Reagent>
+      </Buffers>
+      <RoleClassification>Not defined</RoleClassification>
+      <Coupled>false</Coupled>
+      <ForwardRateConstantApproximation>
+        <ArrheniusRateConstant Tmin="3.0000000000000000e+002" Tmax="3.0000000000000000e+004" N="1.0000000000000000e+000" Ea="3.4128500000000001e-001" LogA="-2.9896196279044052e+001"/>
+      </ForwardRateConstantApproximation>
+    </ChemicalProcess>
+    <ChemicalProcess id="1553" Name="SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/&lt;=&gt;H2S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+      <Direction>Reversible</Direction>
+      <Reagents>
+        <Reagent Multiplier="2.0000000000000000e+000">
+          <Chemical>
+            <Name Name="SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+      </Reagents>
+      <Products>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="H2S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+      </Products>
+      <Buffers/>
+      <RoleClassification>Not defined</RoleClassification>
+      <Coupled>false</Coupled>
+      <ForwardRateConstantApproximation>
+        <ArrheniusRateConstant Tmin="3.0000000000000000e+002" Tmax="3.0000000000000000e+004" N="0.0000000000000000e+000" Ea="0.0000000000000000e+000" LogA="-1.0920818753952380e+001"/>
+      </ForwardRateConstantApproximation>
+    </ChemicalProcess>
+    <ChemicalProcess id="1560" Name="SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/&lt;=&gt;H/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+      <Direction>Reversible</Direction>
+      <Reagents>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+      </Reagents>
+      <Products>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="H/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+      </Products>
+      <Buffers/>
+      <RoleClassification>Not defined</RoleClassification>
+      <Coupled>false</Coupled>
+      <ForwardRateConstantApproximation>
+        <ArrheniusRateConstant Tmin="3.0000000000000000e+002" Tmax="3.0000000000000000e+004" N="0.0000000000000000e+000" Ea="0.0000000000000000e+000" LogA="-9.3467874862246560e+000"/>
+      </ForwardRateConstantApproximation>
+    </ChemicalProcess>
+    <ChemicalProcess id="1567" Name="H/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+H2S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/&lt;=&gt;H2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+      <Direction>Reversible</Direction>
+      <Reagents>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="H/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="H2S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+      </Reagents>
+      <Products>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="H2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+      </Products>
+      <Buffers/>
+      <RoleClassification>Not defined</RoleClassification>
+      <Coupled>false</Coupled>
+      <ForwardRateConstantApproximation>
+        <ArrheniusRateConstant Tmin="3.0000000000000000e+002" Tmax="3.0000000000000000e+004" N="0.0000000000000000e+000" Ea="1.7114000000000000e+000" LogA="-1.0886056647693160e+001"/>
+      </ForwardRateConstantApproximation>
+    </ChemicalProcess>
+    <ChemicalProcess id="1574" Name="H/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/&lt;=&gt;H2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+      <Direction>Reversible</Direction>
+      <Reagents>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="H/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+      </Reagents>
+      <Products>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="H2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+      </Products>
+      <Buffers/>
+      <RoleClassification>Not defined</RoleClassification>
+      <Coupled>false</Coupled>
+      <ForwardRateConstantApproximation>
+        <ArrheniusRateConstant Tmin="3.0000000000000000e+002" Tmax="3.0000000000000000e+004" N="0.0000000000000000e+000" Ea="0.0000000000000000e+000" LogA="-1.0602059991327961e+001"/>
+      </ForwardRateConstantApproximation>
+    </ChemicalProcess>
+    <ChemicalProcess id="1581" Name="H2S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+M/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/&lt;=&gt;H/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+M/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+      <Direction>Reversible</Direction>
+      <Reagents>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="H2S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+      </Reagents>
+      <Products>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="H/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+      </Products>
+      <Buffers>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <ThirdBody/>
+        </Reagent>
+      </Buffers>
+      <RoleClassification>Not defined</RoleClassification>
+      <Coupled>false</Coupled>
+      <ForwardRateConstantApproximation>
+        <ArrheniusRateConstant Tmin="3.0000000000000000e+002" Tmax="3.0000000000000000e+004" N="2.0000000000000000e+000" Ea="9.1539999999999999e+000" LogA="2.1227072543183478e+000"/>
+      </ForwardRateConstantApproximation>
+    </ChemicalProcess>
+    <ChemicalProcess id="1588" Name="S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+H2S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/&lt;=&gt;H2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+      <Direction>Reversible</Direction>
+      <Reagents>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="H2S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+      </Reagents>
+      <Products>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="H2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+      </Products>
+      <Buffers/>
+      <RoleClassification>Not defined</RoleClassification>
+      <Coupled>false</Coupled>
+      <ForwardRateConstantApproximation>
+        <ArrheniusRateConstant Comment="Baulch D.L. at al .Kinetic Data for High Temperature Reactions. v.3 (1976)." Tmin="3.0000000000000000e+002" Tmax="3.0000000000000000e+004" N="0.0000000000000000e+000" Ea="4.9749999999999996e+000" LogA="-1.1000000000000000e+001"/>
+      </ForwardRateConstantApproximation>
+    </ChemicalProcess>
+    <ChemicalProcess id="1595" Name="SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/&lt;=&gt;H2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+      <Direction>Reversible</Direction>
+      <Reagents>
+        <Reagent Multiplier="2.0000000000000000e+000">
+          <Chemical>
+            <Name Name="SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+      </Reagents>
+      <Products>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="H2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+      </Products>
+      <Buffers/>
+      <RoleClassification>Not defined</RoleClassification>
+      <Coupled>false</Coupled>
+      <ForwardRateConstantApproximation>
+        <ArrheniusRateConstant Comment="Baulch D.L. at al. Kinetic Data for High Temperature rReactions. v.3. (1976)." Tmin="3.0000000000000000e+002" Tmax="3.0000000000000000e+004" N="0.0000000000000000e+000" Ea="0.0000000000000000e+000" LogA="-9.6655462488490684e+000"/>
+      </ForwardRateConstantApproximation>
+    </ChemicalProcess>
+    <ChemicalProcess id="1602" Name="S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+M/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/&lt;=&gt;S4/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/+M/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/">
+      <Direction>Reversible</Direction>
+      <Reagents>
+        <Reagent Multiplier="2.0000000000000000e+000">
+          <Chemical>
+            <Name Name="S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+      </Reagents>
+      <Products>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <Chemical>
+            <Name Name="S4/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </Chemical>
+        </Reagent>
+      </Products>
+      <Buffers>
+        <Reagent Multiplier="1.0000000000000000e+000">
+          <ThirdBody/>
+        </Reagent>
+      </Buffers>
+      <RoleClassification>Not defined</RoleClassification>
+      <Coupled>false</Coupled>
+      <ForwardRateConstantApproximation>
+        <ArrheniusRateConstant Comment="Nicholas, J. E., Amodio, C. A., Baker, M. J., J. Chem. Soc. Faraday Trans. 1 75, 1868 (1979)" Tmin="3.0000000000000000e+002" Tmax="3.0000000000000000e+004" N="0.0000000000000000e+000" Ea="0.0000000000000000e+000" LogA="-3.0602059991327959e+001"/>
+      </ForwardRateConstantApproximation>
+    </ChemicalProcess>
+  </Mechanism>
+  <Stream Name="" InletNumber="1">
+    <StreamPhase Name="Gas phase" Type="g" Link="//Phase[@Type='g']" FractionType="Mole">
+      <StreamContinuum Name="" Link="//Phase[@Type='g']/Continuum">
+        <StreamSubsystem Name="" Link="//Phase[@Type='g']/Continuum/Subsystem">
+          <IsothermicSubsystemProperty Temperature="1.8000000000000000e+003"/>
+          <StreamSubstance Fraction="1.0000000000000000e+000">
+            <Name Name="H2S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/"/>
+          </StreamSubstance>
+        </StreamSubsystem>
+      </StreamContinuum>
+    </StreamPhase>
+  </Stream>
+  <ParameterTable Name="Calculation parameters">
+    <ParameterDbl Name="RelativeError" value="1.0000000000000001e-005"/>
+    <ParameterDbl Name="Noise" value="9.9999999999999998e-017"/>
+  </ParameterTable>
+  <ParameterTable Name="Induction time calculation parameters">
+    <ParameterStr Name="Induction Time By" value=""/>
+    <ParameterDbl Name="Threshold" value="1.0000000000000000e-004" units="%"/>
+    <ParameterDbl Name="TimeThreshold" value="1.0000000000000000e-003" units="s"/>
+  </ParameterTable>
+  <ParameterTable Name="Model parameters">
+    <ParameterStr Name="Pressure" value="1" units="atm"/>
+    <ParameterStr Name="HeatLoss" value="0" units="J/(g*s)"/>
+    <ParameterDbl Name="tout" value="5.0000000000000002e-005" units="s"/>
+  </ParameterTable>
+  <ParameterTable Name="Output parameters">
+    <ParameterInt Name="Frequencyofresultswriting" value="1"/>
+    <ParameterStr Name="TablesToReport" value="General results only"/>
+    <ParameterTbl Name="ReportTimes"/>
+    <ParameterDbl Name="ReportOnConcentrationChange" value="0.0000000000000000e+000"/>
+    <ParameterInt Name="TimeIntervals" value="1"/>
+  </ParameterTable>
+  <ParameterTable Name="Reaction time calculation parameters">
+    <ParameterStr Name="Reaction Time By" value=""/>
+    <ParameterDbl Name="EpsilonK" value="1.0000000000000000e-004"/>
+  </ParameterTable>
+</InputData>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OutputData creator="CBR" creationTime="2017-02-28T17:09:51-03:00">
+<Stream InletNumber="1" Name="Gas Outlet">
+<FlowRate value="0" units="kg/h" />
+<StreamPhase Name="Gas Mixture" Type="g" FractionType="Mole" Link="//Phase[@Type='g']">
+<GasPhaseProperty />
+<StreamContinuum Link="//Phase[@Type='g']/Continuum[@Type='']">
+<GeneralContinuumProperty />
+<StreamSubsystem Link="//Phase[@Type='g']/Continuum[@Type='']/Subsystem[@Type='Isothermic']">
+<IsothermicSubsystemProperty Temperature="1754.01" />
+<StreamSubstance Fraction="0.000701557">
+<Name Name="S2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/" />
+</StreamSubstance>
+<StreamSubstance Fraction="1.39376e-005">
+<Name Name="S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/" />
+</StreamSubstance>
+<StreamSubstance Fraction="0.895331">
+<Name Name="H2/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/" />
+</StreamSubstance>
+<StreamSubstance Fraction="0.102376">
+<Name Name="H2S/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/" />
+</StreamSubstance>
+<StreamSubstance Fraction="0.000830681">
+<Name Name="SH/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/" />
+</StreamSubstance>
+<StreamSubstance Fraction="0.000746519">
+<Name Name="H/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/" />
+</StreamSubstance>
+<StreamSubstance Fraction="1.10435e-011">
+<Name Name="S4/g;NoName;0;no;;;;;;;;;no;;;0;0;;;;;0;0;0;0;;;;;;;;;/" />
+</StreamSubstance>
+</StreamSubsystem>
+</StreamContinuum>
+</StreamPhase>
+</Stream>
+</OutputData>

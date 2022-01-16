@@ -1,0 +1,222 @@
+Begin session:
+Progress 0
+Progress 0.03
+Progress 0.0591
+Progress 0.087327
+Progress 0.114707
+gd.append{
+name=input_flow
+}
+gd.flush{
+name=input_flow
+lines=1
+}
+gd.append{
+name=general_results
+}
+gd.flush{
+name=general_results
+lines=1
+}
+Progress 0.114707
+gd.flush{
+name=general_results
+lines=1
+}
+Progress 0.114707
+gd.flush{
+name=general_results
+lines=1
+}
+Progress 0.114707
+gd.flush{
+name=general_results
+lines=1
+}
+Progress 0.114707
+gd.flush{
+name=general_results
+lines=1
+}
+Progress 0.114707
+gd.flush{
+name=general_results
+lines=1
+}
+Progress 0.114707
+gd.flush{
+name=general_results
+lines=1
+}
+Progress 0.114707
+gd.flush{
+name=general_results
+lines=1
+}
+Progress 0.114707
+gd.flush{
+name=general_results
+lines=1
+}
+Progress 0.114707
+gd.flush{
+name=general_results
+lines=1
+}
+Progress 0.114707
+Progress 0.114707
+gd.flush{
+name=general_results
+lines=2
+}
+Progress 0.114707
+Progress 0.114707
+Progress 0.114707
+Progress 0.114707
+gd.flush{
+name=general_results
+lines=4
+}
+Progress 0.114707
+Progress 0.114707
+Progress 0.114707
+Progress 0.114707
+gd.flush{
+name=general_results
+lines=4
+}
+Progress 0.114707
+Progress 0.114707
+Progress 0.114707
+Progress 0.114707
+gd.flush{
+name=general_results
+lines=4
+}
+Progress 0.114707
+Progress 0.114707
+Progress 0.114707
+Progress 0.114707
+gd.flush{
+name=general_results
+lines=4
+}
+Progress 0.114707
+Progress 0.114707
+Progress 0.114708
+Progress 0.114708
+gd.flush{
+name=general_results
+lines=4
+}
+Progress 0.11471
+Progress 0.114715
+Progress 0.114728
+Progress 0.114763
+gd.flush{
+name=general_results
+lines=4
+}
+Progress 0.114861
+Progress 0.115037
+Progress 0.115336
+Progress 0.115877
+gd.flush{
+name=general_results
+lines=4
+}
+Progress 0.117092
+Progress 0.120024
+Progress 0.124498
+Progress 0.131168
+gd.flush{
+name=general_results
+lines=4
+}
+Progress 0.141045
+Progress 0.151739
+Progress 0.163909
+Progress 0.177594
+gd.flush{
+name=general_results
+lines=4
+}
+Progress 0.19295
+Progress 0.202198
+Progress 0.210995
+Progress 0.224
+gd.flush{
+name=general_results
+lines=4
+}
+Progress 0.238121
+Progress 0.25382
+Progress 0.269961
+Progress 0.286037
+gd.flush{
+name=general_results
+lines=4
+}
+Progress 0.300488
+Progress 0.313185
+Progress 0.314431
+Progress 0.321299
+gd.flush{
+name=general_results
+lines=4
+}
+Progress 0.326281
+Progress 0.333457
+Progress 0.340415
+Progress 0.348037
+gd.flush{
+name=general_results
+lines=4
+}
+Progress 0.362484
+Progress 0.372187
+Progress 0.38139
+Progress 0.393555
+gd.flush{
+name=general_results
+lines=4
+}
+Progress 0.4046
+Progress 0.416007
+Progress 0.430756
+Progress 0.444176
+gd.flush{
+name=general_results
+lines=4
+}
+Progress 0.457902
+Progress 0.473102
+Progress 0.487917
+Progress 0.504671
+gd.flush{
+name=general_results
+lines=4
+}
+Progress 0.520905
+Progress 0.53944
+Progress 0.557217
+Progress 0.57772
+gd.flush{
+name=general_results
+lines=4
+}
+Progress 0.597081
+Progress 0.606249
+Progress 0.625936
+SetOkFlag 1
+gd.flush{
+name=general_results
+lines=2
+}
+msg{
+group= Reactor calculation Ok.
+id= -1
+msg= Reactor calculation Ok.
+op= 1
+type= Info
+}
